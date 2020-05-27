@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<title>Kenneth Anthony Esdaile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+html {scroll-behavior: smooth;}
+.grid-four-col
+{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1px;
+  min-width: 300px;
+  max-width: auto;
+}
+
+.col-1-w1 { grid-column: 1; }
+.col-1-w2 { grid-column: 1/3; }
+.col-1-w3 { grid-column: 1/4; }
+.col-1-w4 { grid-column: 1/5; }
+.col-2-w1 { grid-column: 2; }
+.col-2-w2 { grid-column: 2/4; }
+.col-2-w3 { grid-column: 2/5; }
+.col-3-w1 { grid-column: 3; }
+.col-3-w2 { grid-column: 3/5; }
+.col-4-w1 { grid-column: 4; }
+
+.text-right { text-align: right;}
+.text-center { text-align: center;}
+.text-left { text-align: left;}
+.no-margin { margin: 0px;}
+
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-white">
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-light-gray">
+    <a href="#" class="w3-teal w3-bar-item w3-button w3-padding-large w3-hover-white">
+      <i class="w3-xxlarge"></i>
+      <p><span class="w3-large">K.A.E</span></p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>ABOUT ME</p>
+    </a>
+    <a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+      <i class="fa fa-pencil w3-xxlarge"></i>
+      <p>SKILLS</p>
+    </a>
+    <a href="#education" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+      <i class="fa fa-university w3-xxlarge"></i>
+      <p>EDUCATION</p>
+    </a>
+    <a href="#work" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+      <i class="fa fa-briefcase w3-xxlarge"></i>
+      <p>WORK</p>
+    </a>
+    <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+      <i class="fa fa-cogs w3-xxlarge"></i>
+      <p>PROJECTS</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT</p>
+    </a>
+  </nav>
+
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#about" class="w3-bar-item w3-button" style="width:20% !important">ABOUT</a>
+      <a href="#skills" class="w3-bar-item w3-button" style="width:18% !important">SKILLS</a>
+      <a href="#education" class="w3-bar-item w3-button" style="width:25% !important">EDUCATION</a>
+      <a href="#work" class="w3-bar-item w3-button" style="width:17% !important">WORK</a>
+      <a href="#projects" class="w3-bar-item w3-button" style="width:20% !important">PROJECTS</a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-white" id="home">
+      <img src="FIL2.jpg" alt="my display image" class="w3-image" width="992" height="1108">
+      <h1 class="w3-jumbo">Kenneth Anthony Esdaile</h1>
+      <p>Software Engineer.</p>
+    </header>
+
+
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64">
+
+      <!-- About Section -->
+      <div id="about">
+        <h2 class="w3-text-mid-grey">About Me</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p>Greetings, my name is Kenneth Anthony Esdaile. I am a senior at Queens Community College. I completed the requirement for a bachelor of art in computer science but haven’t decided on graduation yet, because I am one course away from a bachelors of science in computer science. I have limited professional experience in the computer science field. I am actively looking for an opportunity to apply my skills and gain the experience necessary to establish my self as a professional.
+          <br><br>
+          I am a fast learner. I enjoy taking on challenging projects, critical thinking, problem-solving, organizing and analyzing information, collaborating with others and exchanging ideas, learning new concepts, and algorithms to push my capabilities and exceed my limits. I am passionate about software development and have a solid understanding of object-oriented programming. I am well versed in languages such as C/C++, Java, HTML, CSS, JavaScript, OpenGL Shader Programming Language (GLSL), and familiar with languages such as C#, Python, PHP, and SQL. My goal is to utilize my strengths in the computer science field to make a positive impact.
+        </p>
+      </div>
+      <!-- End About Section -->
+
+      <!-- Skills Section -->
+      <div id="skills">
+        <h2 class="w3-text-mid-grey">My Skills</h2>
+        <p class="w3-wide">Object-Oriented Programming (OOP)</p>
+        <div class="w3-light-gray">
+          <div class="w3-teal" style="height:10px;width:100%"></div>
+        </div>
+        <p class="w3-wide">C/C++</p>
+        <div class="w3-light-gray">
+          <div class="w3-teal" style="height:10px;width:100%"></div>
+        </div>
+        <p class="w3-wide">Java</p>
+        <div class="w3-light-gray">
+          <div class="w3-teal" style="height:10px;width:90%"></div>
+        </div>
+        <p class="w3-wide">HTML</p>
+        <div class="w3-light-gray">
+          <div class="w3-teal" style="height:10px;width:99%"></div>
+        </div>
+        <p class="w3-wide">CSS</p>
+        <div class="w3-light-gray">
+          <div class="w3-teal" style="height:10px;width:99%"></div>
+        </div>
+        <p class="w3-wide">JavaScript</p>
+        <div class="w3-light-gray">
+          <div class="w3-teal" style="height:10px;width:80%"></div>
+        </div>
+        <p class="w3-wide">PHP</p>
+        <div class="w3-light-gray">
+          <div class="w3-teal" style="height:10px;width:80%"></div>
+        </div>
+        <p class="w3-wide">Python</p>
+        <div class="w3-light-gray">
+          <div class="w3-teal" style="height:10px;width:70%"></div>
+        </div>
+        <p class="w3-wide">OpenGL Shading Language (GLSL)</p>
+        <div class="w3-light-gray">
+          <div class="w3-teal" style="height:10px;width:95%"></div>
+        </div>
+
+        <h4 class="w3-text-light-grey">Additional Skills</h4>
+        <p>OpenGL API, Git, XML, HTML5, Web Development, 3D Vector Mathematics, GUI Engineering/Programming, Debugging Code, Mac OSX, Windows, Ubuntu, Xcode, Visual Studio, Eclipse, Photoshop, Illustrator, Graphic Designing</p>
+      </div>
+      <!-- End Of Skills Section -->
+
+      <!-- Education Section -->
+      <div class="w3-row-padding" style="margin:0 -16px" id="education">
+        <h2 class="w3-text-mid-grey">Education</h2>
+
+        <div class="w3-container grid-four-col">
+          <h6 class="col-1-w3 w3-text-mid-grey"><strong>Queens College, City University of New York - Flushing, NY</strong></h6>
+          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Sept 2014 - Aug 2019</div>
+          <p class="col-1-w4 no-margin">
+            • Bachelor of Science in <strong>Computer Science</strong>
+          </p>
+        </div>
+        <hr class="w3-opacity">
+        <div class="w3-container grid-four-col">
+          <h6 class="col-1-w3 w3-text-mid-grey"><strong>LaGuardia Community College - Long Island City, NY</strong></h6>
+          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Sept 2012 - Aug 2014</div>
+          <p class="col-1-w4 no-margin">
+            • Associate of Science in <strong>Computer Science</strong><br>
+            • <strong>Dean's List Certificate of Honor</strong>
+          </p>
+        </div>
+        <hr class="w3-opacity">
+      </div>
+      <!-- End of Education Section -->
+
+
+      <!-- Work Section -->
+      <div class="w3-row-padding" style="margin:0 -16px" id="work">
+        <h2 class="w3-text-mid-grey">Relevant Work Experience</h2>
+        <div class="w3-container grid-four-col">
+          <h5 class="col-1-w3 w3-text-mid-grey"> <strong>LaGuardia Community College - Long Island City, NY</strong> </h5>
+          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Aug 2014 - Sept 2014</div>
+          <h6 class="col-1-w4 w3-text-mid-grey no-margin"><strong>Wed Developer Intern</strong></h6>
+          <p class="col-1-w4 no-margin">
+          • Developed landing pages, dashboards and online applications using Javascript, HTML and CSS<br>
+          • Developed user interfaces with modern JavaScript frameworks, HTML and CSS<br>
+          • Used newly learned programming capabilities in PHP, SQL and JavaScript to develop a scheduling system
+          </p>
+        </div>
+        <hr class="w3-opacity">
+      </div>
+      <!-- End Work Section -->
+
+
+      <!-- Project Section -->
+      <div class="w3-row-padding" style="margin:0 -16px" id="projects">
+        <h2 class="w3-text-mid-grey">Featured Projects</h2>
+
+        <div class="w3-container grid-four-col">
+          <h6 class="col-1-w3 w3-text-mid-grey no-margin"><strong>Game Engine</strong></h6>
+          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Feb 2016-present</div>
+          <p class="col-1-w4">need description...
+          </p>
+          <div class="col-1-w4">
+            <p style="padding:0px; margin:0px">
+              <span class="w3-text-red">requirements</span>: C/C++, OpenGL API 4.0, OpenGL Shadering Language 4.0 (GLSL), Data Structures & Algorithms, Linear Algebra, 3D Vector Calculus, Xcode, etc... <br>
+              source: <span class="w3-text-blue">code</span>
+            </p>
+          </div>
+        </div>
+
+        <hr class="w3-opacity">
+
+        <div class="w3-container grid-four-col">
+          <h6 class="col-1-w3 w3-text-mid-grey no-margin"><strong>Physic Engine</strong></h6>
+          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Oct 2019-present</div>
+          <p class="col-1-w4">need description...
+          </p>
+          <div class="col-1-w4">
+            <p style="padding:0px; margin:0px">
+              <span class="w3-text-red">requirements</span>: C/C++, OpenGL API 4.0, OpenGL Shadering Language 4.0 (GLSL), Linear Algebra, 3D Vector Calculus, Xcode <br>
+              source: <span class="w3-text-blue">code</span>
+            </p>
+          </div>
+        </div>
+
+        <hr class="w3-opacity">
+
+        <div class="w3-container grid-four-col">
+          <h6 class="col-1-w3 w3-text-mid-grey no-margin"><strong>GUI Library</strong></h6>
+          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Feb 2020</div>
+          <p class="col-1-w4">There are many versions of this project. The first version I created in 2016; however, as time goes on, I came up with better ways of coding a GUI system. So I would redo this project using the logics from the previous one to improve on and build a better system. The latest version has a dynamic typesetting system, a decoupled messenger for even notification, object ref counting support, and much cleaner coding.
+          </p>
+          <div class="col-1-w4">
+            <p style="padding:0px; margin:0px">
+              <span class="w3-text-red">requirements</span>: C/C++, OpenGL API 4.0, OpenGL Shadering Language 4.0 (GLSL), Xcode <br>
+              source: <span class="w3-text-blue">code</span>
+            </p>
+          </div>
+        </div>
+
+        <hr class="w3-opacity">
+
+        <div class="w3-container grid-four-col">
+          <h6 class="col-1-w3 w3-text-mid-grey no-margin"><strong>Older Web-Portfolio</strong></h6>
+          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Sept 2019</div>
+          <p class="col-1-w4">need description...
+          </p>
+          <div class="col-1-w4">
+            <p style="padding:0px; margin:0px">
+              <span class="w3-text-red">requirements</span>: HTML, CSS, JavaScript, Visual Studio Code, Firefox Web-Browser <br>
+              source: <span class="w3-text-blue">code</span>
+            </p>
+          </div>
+        </div>
+
+        <hr class="w3-opacity">
+
+        <div class="w3-container grid-four-col">
+          <h6 class="col-1-w3 w3-text-mid-grey no-margin"><strong>Programming Language Interpreter</strong></h6>
+          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>May 2019</div>
+          <p class="col-1-w4">Principles of Programming Languages course project, while I was attending Queen College. This project comes in 4 stages. The first is to build a DFA for the type free programming language, a language similar to Python and JavaScript. The next is to write a parser to parse instructions from the language. The 3rd stage is to write an interpreter to interpret the instructions parsed from the language. The 4th and final stage is to support array allocation and index operations.
+          </p>
+          <div class="col-1-w4">
+            <p style="padding:0px; margin:0px">
+              <span class="w3-text-red">requirements</span>: C/C++, Xcode <br>
+              source: <span class="w3-text-blue">code</span>
+            </p>
+          </div>
+        </div>
+
+        <hr class="w3-opacity">
+
+        <div class="w3-container grid-four-col">
+          <h6 class="col-1-w3 w3-text-mid-grey no-margin"><strong>Interactive 3D scene</strong></h6>
+          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Dec 2018</div>
+          <p class="col-1-w4">Principles of Programming Languages course project, while I was attending Queen College. This project comes in 4 stages. The first is to build a DFA for the type free programming language, a language similar to Python and JavaScript. The next is to write a parser to parse instructions from the language. The 3rd stage is to write an interpreter to interpret the instructions parsed from the language. The 4th and final stage is to support array allocation and index operations.
+          </p>
+          <div class="col-1-w4">
+            <p style="padding:0px; margin:0px">
+              <span class="w3-text-red">requirements</span>: C/C++, OpengGL API 2.1, Xcode, Data Structures <br>
+              source: <span class="w3-text-blue">code</span>
+            </p>
+          </div>
+        </div>
+
+        <hr class="w3-opacity">
+
+        <div class="w3-container grid-four-col">
+          <h6 class="col-1-w3 w3-text-mid-grey no-margin"><strong>Realtime Continuous LOD Quadtree Terrain Rendering</strong></h6>
+          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Sept-2016</div>
+          <p class="col-1-w4">This project is an improvement to an earlier project I worked on rendering landscape using the OpenGL API. The older project draws the entire terrain in full detail. Increasing the terrain tile range will lower the frame rate because you are rendering more tiles and more triangles. On top of this detail in the distance can not be seen. It is a waste to have so many triangles drawn in the distance when those triangles are nearly as small as pixels. Level Of Detail (LOD) makes the terrain mesh dynamic, therefore the terrain tiles changes based on the observers' position. Terrain tiles closer to the viewer get rendered in full detail. As the distance between the viewer and terrain tile increases, fewer triangles are used to draw the terrain tiles. Because of this, the terrain tiles need to update whenever the viewer moves.
+          </p>
+          <div class="col-1-w4">
+            <p class="no-margin">
+              <span class="w3-text-red">requirements</span>: C/C++, OpengGL API 4.1, OpenGL Shading Language (GLSL), Xcode, Data Structures, 3D vector mathematics<br>
+              source: <span class="w3-text-blue">code</span>
+            </p>
+          </div>
+        </div>
+
+        <hr class="w3-opacity">
+
+        <div class="w3-container grid-four-col">
+          <h6 class="col-1-w3 w3-text-mid-grey no-margin"><strong>Collada Geometry Parser</strong></h6>
+          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Sept 2016</div>
+          <p class="col-1-w4">Free libraries exist to handle loading 3D geometry from files like Collada. However, as a software engineer, I like challenging myself and learning how to do things, so I decided to code my own Collada file loader.
+          </p>
+          <div class="col-1-w4">
+            <p class="no-margin">
+              <span class="w3-text-red">requirements</span>: C/C++, OpenGL API, GLSL, String Parsing, Xcode<br>
+              source: <span class="w3-text-blue">code</span>
+            </p>
+          </div>
+        </div>
+
+        <hr class="w3-opacity">
+
+        <div class="w3-container grid-four-col">
+          <h6 class="col-1-w3 w3-text-mid-grey no-margin"><strong>Wavefront OBJ File Parser</strong></h6>
+          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Sept 2015</div>
+          <p class="col-1-w4">Rendering multiple lights a few boxes and some spheres is cool and all. But rendering more complex 3d objects, rendering a scene is even cooler. Game Programming and Engine development have been an interest of mine for many years now. After graduating from LaGuardia Community College, I was eager to learn 3D graphics programming. One thing that always comes up while learning the OpenGL API is how to render more complex objects. Doing some research lead me to the OBJ file format. There is much information on the web about this, which was plenty of help while writing my first parser.
+          </p>
+          <div class="col-1-w4">
+            <p class="no-margin">
+              <span class="w3-text-red">requirements</span>: C/C++, OpenGL API, GLSL, String Parsing, Xcode<br>
+              source: <span class="w3-text-blue">code</span>
+            </p>
+          </div>
+        </div>
+
+        <hr class="w3-opacity">
+
+        <div class="w3-container grid-four-col">
+          <h6 class="col-1-w3 w3-text-mid-grey no-margin"><strong>3D Vector Mathematics Library</strong></h6>
+          <div class="col-4-w3 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Sept-2014</div>
+          <p class="col-1-w4">One of the first projects I tackled when I graduated from Laguardia Community College is a 3D vector math library. 3D vector math library is the core component of all 3D graphical applications. This project was necessary for me to improve my programming and mathematical skills, and was the first step toward making 3D graphics software. I start this project in Sept-2014 but continue to update it over time as needed.
+          </p>
+          <div class="col-1-w4">
+            <p class="no-margin">
+              <span class="w3-text-red">requirements</span>: C/C++, Linear Algebra, Vector Calculus Math, Xcode<br>
+              source: <span class="w3-text-blue">code</span>
+            </p>
+          </div>
+        </div>
+
+        <hr class="w3-opacity">
+
+        <div class="w3-container grid-four-col">
+          <h6 class="col-1-w3 w3-text-mid-grey no-margin"><strong>Blogspot Template</strong></h6>
+          <div class="col-4-w3 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Sept-2013</div>
+          <p class="col-1-w4">Back when I use to draw a lot, much more than I do now. I started a blog to showcase some of my artworks. Before this project, I had some web-programming experience learned while in high school, and I used to make myspace templates. I had this idea for my BlogSpot blog template and could not find any template similar to the idea I had. So, I tinkered with the blogger HTML and CSS code and learned which part affects which part of my blog. Eventually, I learned enough and was ready to build my own. After building many templates, I came up with this template theme, which was my favorite.
+          </p>
+          <div class="col-1-w4">
+            <p class="no-margin">
+              <span class="w3-text-red">requirements</span>: HTML, CSS, Note Pad, Web Browser<br>
+              demo: <a href="http://kae-demo-orange.blogspot.com/?zx=14ebac9f116bfb07" target="_blank" style="text-decoration:none"><span class="w3-text-blue">orange</span></a>, <a href="https://artwork-template-dark.blogspot.com/?zx=228ca97706fe3c7e" target="_blank" style="text-decoration:none"><span class="w3-text-blue">black</span></a>
+            </p>
+          </div>
+        </div>
+
+        <hr class="w3-opacity">
+      </div>
+      <!-- Enf Of Project Section -->
+
+
+      <!-- Contact Section -->
+      <div class="w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-mid-grey">Contact Me</h2>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input" type="text" placeholder="Name" required name="Name"></p>
+          <p><input class="w3-input" type="text" placeholder="Email" required name="Email"></p>
+          <p><input class="w3-input" type="text" placeholder="Subject" required name="Subject"></p>
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+          <p>
+            <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form>
+      </div>
+      <!-- End Contact Section -->
+
+    </div>
+
+    <hr class="w3-opacity">
+
+    <!-- Footer -->
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge w3-center">
+      <a href="https://github.com/kanthonye"> <i class="fa fa-github w3-hover-opacity"></i> </a>
+      <a href="https://www.linkedin.com/in/kanthonye/"> <i class="fa fa-linkedin w3-hover-opacity"></i> </a>
+      <p class="w3-medium w3-center">Designed by <strong>Kenneth Anthony Esdaile</strong></p>
+    <!-- End footer -->
+    </footer>
+
+  </div>
+  <!-- End Of Page Content -->
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (500) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 500, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</html>

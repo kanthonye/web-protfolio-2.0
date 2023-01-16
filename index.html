@@ -8,8 +8,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-a{text-decoration:none;}
+
+a{
+  text-decoration:none;
+  color:  rgb(65, 138, 136);
+  font-weight: bolder;
+}
 html {scroll-behavior: smooth;}
+
 .grid-four-col
 {
   display: grid;
@@ -19,6 +25,124 @@ html {scroll-behavior: smooth;}
   min-width: 300px;
   max-width: auto;
 }
+
+.banner
+{
+  padding: 10px;
+}
+.banner-tiles
+{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  gap: 20px;
+  min-width: 500px;
+  max-width: 800px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.banner-links
+{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  gap: 20px;
+  min-width: 500px;
+  max-width: 800px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.section
+{
+  margin-bottom: 50px;
+}
+.education
+{
+  width: 100%;
+  margin-top: 20px;
+}
+.education-campus-and-date
+{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0%;
+}
+.education-degree
+{
+  white-space: nowrap;
+  font-style: italic;
+}
+
+.employment
+{
+  width: 100%;
+  margin-top: 20px;
+  /* background-color: rgba(189, 197, 236, 0.446); */
+}
+.employment-employer-and-date
+{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0%;
+  /* background-color: rgba(189, 197, 236, 0.446); */
+}
+.employment-employer
+{
+  white-space: nowrap;
+  /* background-color: rgba(189, 197, 236, 0.446); */
+}
+.employment-date
+{
+  white-space: nowrap;
+  /* background-color: rgba(189, 197, 236, 0.446); */
+}
+.employment-position
+{
+  white-space: nowrap;
+}
+.employment-description
+{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* background-color: rgba(189, 197, 236, 0.446); */
+}
+
+.skill
+{
+  text-align: center;
+  border: rgba(65, 138, 136, 0.246) 1px solid;
+  white-space: nowrap;
+  padding: 20px;
+  margin: 4px;
+  border-radius: 5px;
+}
+.skills-panel
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
 #display-image { 
   opacity: 0.5;
   transition: opacity 0.5s;
@@ -56,23 +180,23 @@ html {scroll-behavior: smooth;}
       <i class="w3-xxlarge"></i>
       <p><span class="w3-large">K.A.E</span></p>
     </a>
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <a href="#about-section" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
       <i class="fa fa-home w3-xxlarge"></i>
       <p>ABOUT ME</p>
     </a>
-    <a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-      <i class="fa fa-pencil w3-xxlarge"></i>
-      <p>SKILLS</p>
-    </a>
-    <a href="#education" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-      <i class="fa fa-university w3-xxlarge"></i>
-      <p>EDUCATION</p>
-    </a>
-    <a href="#work" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <a href="#work-section" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
       <i class="fa fa-briefcase w3-xxlarge"></i>
       <p>WORK</p>
     </a>
-    <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <a href="#education-section" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+      <i class="fa fa-university w3-xxlarge"></i>
+      <p>EDUCATION</p>
+    </a>
+    <a href="#skills-section" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+      <i class="fa fa-pencil w3-xxlarge"></i>
+      <p>SKILLS</p>
+    </a>
+    <a href="#projects-section" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
       <i class="fa fa-cogs w3-xxlarge"></i>
       <p>PROJECTS</p>
     </a>
@@ -103,117 +227,143 @@ html {scroll-behavior: smooth;}
   <div class="w3-padding-large" id="main">
 
     <!-- Header/Home -->
-    <header class="w3-container w3-padding-32 w3-center w3-white" id="home">
+    <header class="w3-container w3-padding-32 w3-center w3-white banner" id="home">
       <img id="display-image" src="KAE-portrait.jpg" alt="my display image" class="w3-image" width="992" height="1108">
       <h1 class="w3-jumbo">Kenneth Anthony Esdaile</h1>
-      <p>Software Engineer.</p>
+      <div class="banner-tiles">
+        <strong style="font-size: 20px;">Software Engineer</strong>
+      </div>
+      <div class="banner-tiles">
+        <address>New York, United States</address> 
+      </div>
+      <div class="banner-links">
+        <a href="linkedin.com/in/kanthonye"><i class="fa fa-linkedin w3-hover-opacity"></i> LinkedIn</a>
+        <a href="https://github.com/kanthonye"><i class="fa fa-github w3-hover-opacity"></i> GitHub</a>
+      </div>
+     
     </header>
 
 
     <div class="w3-content w3-justify w3-text-grey w3-padding-64">
 
       <!-- About Section -->
-      <div id="about">
+      <div class="section" id="about-section">
         <h2 class="w3-text-mid-grey">About Me</h2>
         <hr style="width:200px" class="w3-opacity">
         <p>
           Experienced software engineer with a strong background in designing and developing software solutions for
-a variety of industries. Proficient in multiple programming languages, including Java, Python, and C++. Able
-to work effectively in a team-oriented environment. Strong problem-solving and critical thinking abilities, with experience in full software development lifecycle, including requirements analysis, design, development, testing and deployment.
+          a variety of industries. Proficient in multiple programming languages, including Java, Python, and C++. Able
+          to work effectively in a team-oriented environment. Strong problem-solving and critical thinking abilities, 
+          with experience in full software development lifecycle, including requirements analysis, design, development, 
+          testing and deployment.
         </p>
       </div>
       <!-- End About Section -->
 
-      <!-- Skills Section -->
-      <div id="skills">
-        <h2 class="w3-text-mid-grey">My Skills</h2>
-        <p class="w3-wide">Object-Oriented Programming (OOP)</p>
-        <div class="w3-light-gray">
-          <div class="w3-teal" style="height:10px;width:100%"></div>
-        </div>
-        <p class="w3-wide">C/C++</p>
-        <div class="w3-light-gray">
-          <div class="w3-teal" style="height:10px;width:100%"></div>
-        </div>
-        <p class="w3-wide">Java</p>
-        <div class="w3-light-gray">
-          <div class="w3-teal" style="height:10px;width:90%"></div>
-        </div>
-        <p class="w3-wide">HTML</p>
-        <div class="w3-light-gray">
-          <div class="w3-teal" style="height:10px;width:99%"></div>
-        </div>
-        <p class="w3-wide">CSS</p>
-        <div class="w3-light-gray">
-          <div class="w3-teal" style="height:10px;width:99%"></div>
-        </div>
-        <p class="w3-wide">JavaScript</p>
-        <div class="w3-light-gray">
-          <div class="w3-teal" style="height:10px;width:80%"></div>
-        </div>
-        <p class="w3-wide">PHP</p>
-        <div class="w3-light-gray">
-          <div class="w3-teal" style="height:10px;width:80%"></div>
-        </div>
-        <p class="w3-wide">Python</p>
-        <div class="w3-light-gray">
-          <div class="w3-teal" style="height:10px;width:70%"></div>
-        </div>
-        <p class="w3-wide">OpenGL Shading Language (GLSL)</p>
-        <div class="w3-light-gray">
-          <div class="w3-teal" style="height:10px;width:95%"></div>
-        </div>
-
-        <h4 class="w3-text-light-grey">Additional Skills</h4>
-        <p>OpenGL API, Git, XML, HTML5, Web Development, 3D Vector Mathematics, GUI Engineering/Programming, Debugging Code, Mac OSX, Windows, Ubuntu, Xcode, Visual Studio, Eclipse, Photoshop, Illustrator, Graphic Designing</p>
-      </div>
-      <!-- End Of Skills Section -->
-
-      <!-- Education Section -->
-      <div class="w3-row-padding" style="margin:0 -16px" id="education">
-        <h2 class="w3-text-mid-grey">Education</h2>
-
-        <div class="w3-container grid-four-col">
-          <h6 class="col-1-w3 w3-text-mid-grey"><strong>Queens College, City University of New York - Flushing, NY</strong></h6>
-          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Sept 2014 - Aug 2019</div>
-          <p class="col-1-w4 no-margin">
-            • Bachelor of Science in <strong>Computer Science</strong>
-          </p>
-        </div>
-        <hr class="w3-opacity">
-        <div class="w3-container grid-four-col">
-          <h6 class="col-1-w3 w3-text-mid-grey"><strong>LaGuardia Community College - Long Island City, NY</strong></h6>
-          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Sept 2012 - Aug 2014</div>
-          <p class="col-1-w4 no-margin">
-            • Associate of Science in <strong>Computer Science</strong><br>
-            • <strong>Dean's List Certificate of Honor</strong>
-          </p>
-        </div>
-        <hr class="w3-opacity">
-      </div>
-      <!-- End of Education Section -->
 
 
       <!-- Work Section -->
-      <div class="w3-row-padding" style="margin:0 -16px" id="work">
-        <h2 class="w3-text-mid-grey">Relevant Work Experience</h2>
-        <div class="w3-container grid-four-col">
-          <h5 class="col-1-w3 w3-text-mid-grey"> <strong>LaGuardia Community College - Long Island City, NY</strong> </h5>
-          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Aug 2014 - Sept 2014</div>
-          <h6 class="col-1-w4 w3-text-mid-grey no-margin"><strong>Web Developer Intern</strong></h6>
-          <p class="col-1-w4 no-margin">
-          • Developed landing pages, dashboards and online applications using Javascript, HTML and CSS<br>
-          • Developed user interfaces with modern JavaScript frameworks, HTML and CSS<br>
-          • Used newly learned programming capabilities in PHP, SQL and JavaScript to develop a scheduling system
+      <div class="section" id="work-section">
+
+        <h2 class="w3-text-mid-grey">Work Experience</h2>
+        <div class="w3-container employment">
+          <div class="employment-employer-and-date">
+            <div><h6 class="w3-text-mid-grey employment-employer"> <strong>UCEntelligence - Rochester, New York, United States</strong> </h6></div>
+            <div class="w3-text-teal text-right employment-date"><i class="fa fa-calendar fa-fw"></i>March 2022 - Present</div>
+          </div>
+          <h5 class="col-1-w4 w3-text-mid-grey no-margin employment-position"><strong>Full Stack Develope (remote)</strong></h5>
+          <p class="no-margin employment-description">
+            Responsible for the full software development lifecycle of UCEntelligence YinFo mobile app 
+            and UCEntelligence web app, including requirements analysis, design, development, testing, 
+            and deployment.
           </p>
         </div>
-        <hr class="w3-opacity">
+
+        <div class="w3-container employment">
+          <div class="employment-employer-and-date">
+            <div><h6 class="w3-text-mid-grey employment-employer"> <strong>LaGuardia Community College - Long Island City, NY</strong> </h6></div>
+            <div class="w3-text-teal text-right employment-date"><i class="fa fa-calendar fa-fw"></i>Aug 2014 - Sept 2014</div>
+          </div>
+          <h5 class="col-1-w4 w3-text-mid-grey no-margin employment-position"><strong>Web Developer Intern</strong></h5>
+          <p class="col-1-w4 no-margin employment-description">
+            • Developed landing pages, dashboards and online applications using Javascript, HTML and CSS<br>
+            • Developed user interfaces with modern JavaScript frameworks, HTML and CSS<br>
+            • Used newly learned programming capabilities in PHP, SQL and JavaScript to develop a scheduling system
+          </p>
+        </div>
+        
       </div>
       <!-- End Work Section -->
 
 
+
+      <!-- Education Section -->
+      <div class="section" id="education-section">
+        <h2 class="w3-text-mid-grey">Education</h2>
+
+        <div class="w3-container education">
+          <div class="education-campus-and-date">
+            <div><h6 class="w3-text-mid-grey education-campus"> <strong>Queens College, City University of New York - Flushing, NY</strong> </h6></div>
+            <div class="w3-text-teal text-right education-date"><i class="fa fa-calendar fa-fw"></i>Sept 2014 - Aug 2019</div>
+          </div>
+          <div class="col-1-w4 w3-text-mid-grey no-margin education-degree">Bachelor of Science in <strong>Computer Science</strong></div>
+        </div>
+
+        <div class="w3-container education">
+          <div class="education-campus-and-date">
+            <div><h6 class="w3-text-mid-grey education-campus"> <strong>LaGuardia Community College - Long Island City, NY</strong> </h6></div>
+            <div class="w3-text-teal text-right education-date"><i class="fa fa-calendar fa-fw"></i>Sept 2012 - Aug 2014</div>
+          </div>
+          <div class="col-1-w4 w3-text-mid-grey no-margin education-degree">
+            Associate of Science in <strong>Computer Science</strong><br>
+          </div>
+        </div>
+
+      </div>
+      <!-- End of Education Section -->
+
+
+
+      <!-- Skills Section -->
+      <div class="section" id="skills-section">
+        <h2 class="w3-text-mid-grey">My Skills</h2>
+
+        <div class="skills-panel">
+          <div class="skill">C/C++</div>
+          <div class="skill">Java</div>
+          <div class="skill">PHP</div>
+          <div class="skill">Python</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">React Native</div>
+          <div class="skill">HTML/HTML5</div>
+          <div class="skill">CSS</div>
+          <div class="skill">OpenGL Shading Language (GLSL)</div>
+          <div class="skill">OpenGL API</div>
+          <div class="skill">Vulkan API</div>
+          <div class="skill">Laravel</div>
+          <div class="skill">Git</div>
+          <div class="skill">XML</div>
+          <div class="skill">Web Development</div>
+          <div class="skill">Software Development</div>
+          <div class="skill">Full Stack Developer</div>
+          <div class="skill">3D Vector Mathematics</div>
+          <div class="skill">GUI Programming and Design</div>
+          <div class="skill">Debugging</div>
+          <div class="skill">Graphic Designing</div>
+          <div class="skill">XML</div>
+        </div>
+        <!-- 
+        <div class="w3-light-gray">
+          <div class="w3-teal" style="height:10px;width:95%"></div>
+        </div> 
+        -->
+      </div>
+      <!-- End Of Skills Section -->
+
+
+
       <!-- Project Section -->
-      <div class="w3-row-padding" style="margin:0 -16px" id="projects">
+      <div class="section" id="projects-section">
         <h2 class="w3-text-mid-grey">Featured Projects</h2>
 
         <div class="w3-container grid-four-col">

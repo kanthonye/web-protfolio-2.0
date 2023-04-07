@@ -1,572 +1,643 @@
+
 <!DOCTYPE html>
 <html>
-<title>Kenneth Anthony Esdaile</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-  *{font-family: "Montserrat", sans-serif}
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kenneth A Esdaile | Software Developer </title>
+    <link rel="icon" href="img/my-logo.png" type="image/gif" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle&display=swap" rel="stylesheet">
 
-  a{
-    text-decoration:none;
-    color:  rgb(65, 138, 136);
-    font-weight: bolder;
-  }
-  html {scroll-behavior: smooth;}
-
-  .grid-four-col
-  {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: auto;
-    grid-gap: 1px;
-    min-width: 300px;
-    max-width: auto;
-  }
-
-  .banner
-  {
-    padding: 10px;
-  }
-  .banner-tiles
-  {
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-    gap: 20px;
-    min-width: 500px;
-    max-width: 800px;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .banner-links
-  {
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-    gap: 20px;
-    min-width: 500px;
-    max-width: 800px;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/kae-style.css">
+    <link rel="stylesheet" type="text/css" href="css/particles.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/evaporation-particles.css"> -->
+    <script src="js/employments.js"></script>
+    <script src="js/myscript.js"></script>
+    <script src="js/my-projects.js"></script>
+    <script src="js/navbar.js"></script>
+</head>
 
 
-  .section
-  {
-    margin-bottom: 50px;
-  }
-  .education
-  {
-    width: 100%;
-    margin-top: 20px;
-  }
-  .education-campus-and-date
-  {
-    width: 100%;
-    height: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0%;
-  }
-  .education-degree
-  {
-    white-space: nowrap;
-    font-style: italic;
-  }
+<body onresize="resize_function()" onload="resize_function()">
 
-  .employment
-  {
-    width: 100%;
-    margin-top: 20px;
-    /* background-color: rgba(189, 197, 236, 0.446); */
-  }
-  .employment-employer-and-date
-  {
-    width: 100%;
-    height: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0%;
-    /* background-color: rgba(189, 197, 236, 0.446); */
-  }
-  .employment-employer
-  {
-    white-space: nowrap;
-    /* background-color: rgba(189, 197, 236, 0.446); */
-  }
-  .employment-date
-  {
-    white-space: nowrap;
-    /* background-color: rgba(189, 197, 236, 0.446); */
-  }
-  .employment-position
-  {
-    white-space: nowrap;
-  }
-  .employment-description
-  {
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    /* background-color: rgba(189, 197, 236, 0.446); */
-  }
+<div id="navbar">
+    <ul> 
+        <li> 
+            <a href="#portfolio" onmouseover="MouseIn( this, 'Portfolio' )" onmouseout="MouseOut( this, 'Portfolio' )"> : Portfolio : </a> 
+        </li>
+        <li> 
+            <a href="#about-me" onmouseover="MouseIn( this, 'AboutMe' )" onmouseout="MouseOut( this, 'AboutMe' )"> : AboutMe : </a> 
+        </li>
+        <li> 
+            <a href="#my-projects" onmouseover="MouseIn( this, 'Projects' )" onmouseout="MouseOut( this, 'Projects' )"> : Projects : </a> 
+        </li>
+        <li> 
+            <a class="contact" onmouseover="MouseIn( this, 'ContactMe' )" onmouseout="MouseOut( this, 'ContactMe' )" href="mailto:k.a.esdaile@gmail.com">
+                ContactMe
+            </a>
+        </li>
+        <!-- <li> 
+            <a href="KAE-web-RESUME.pdf" onmouseover="MouseIn( this, 'Resume' )" onmouseout="MouseOut( this, 'Resume' )"> : Resume : </a> 
+        </li> -->
+    </ul>
+</div>
 
-  .skill
-  {
-    text-align: center;
-    border: rgba(65, 138, 136, 0.246) 1px solid;
-    white-space: nowrap;
-    padding: 20px;
-    margin: 4px;
-    border-radius: 5px;
-  }
-  .skills-panel
-  {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 20px;
-    justify-content: stretch;
-    align-items: stretch;
-  }
 
-  #display-image { 
-    opacity: 0.5;
-    transition: opacity 0.5s;
-  }
-  #display-image:hover { opacity: 1.0; }
-  .col-1-w1 { grid-column: 1; }
-  .col-1-w2 { grid-column: 1/3; }
-  .col-1-w3 { grid-column: 1/4; }
-  .col-1-w4 { grid-column: 1/5; }
-  .col-2-w1 { grid-column: 2; }
-  .col-2-w2 { grid-column: 2/4; }
-  .col-2-w3 { grid-column: 2/5; }
-  .col-3-w1 { grid-column: 3; }
-  .col-3-w2 { grid-column: 3/5; }
-  .col-4-w1 { grid-column: 4; }
-
-  .text-right { text-align: right;}
-  .text-center { text-align: center;}
-  .text-left { text-align: left;}
-  .no-margin { margin: 0px;}
-
-  .w3-row-padding img {margin-bottom: 12px}
-  /* Set the width of the sidebar to 120px */
-  .w3-sidebar {width: 120px;background: #222;}
-  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-  #main {margin-left: 120px}
-  /* Remove margins from "page content" on small screens */
-  @media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-<body class="w3-white">
-
-  <!-- Icon Bar (Sidebar - hidden on small screens) -->
-  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-light-gray">
-    <a href="#" class="w3-teal w3-bar-item w3-button w3-padding-large w3-hover-white">
-      <i class="w3-xxlarge"></i>
-      <p><span class="w3-large">K.A.E</span></p>
-    </a>
-    <a href="#about-section" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-      <i class="fa fa-home w3-xxlarge"></i>
-      <p>ABOUT ME</p>
-    </a>
-    <a href="#work-section" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-      <i class="fa fa-briefcase w3-xxlarge"></i>
-      <p>WORK</p>
-    </a>
-    <a href="#education-section" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-      <i class="fa fa-university w3-xxlarge"></i>
-      <p>EDUCATION</p>
-    </a>
-    <a href="#skills-section" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-      <i class="fa fa-pencil w3-xxlarge"></i>
-      <p>SKILLS</p>
-    </a>
-    <a href="#projects-section" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-      <i class="fa fa-cogs w3-xxlarge"></i>
-      <p>PROJECTS</p>
-    </a>
-    <a href="kennethesdaile-resume-demo-2020-06.pdf" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-      <i class="fa fa-address-card-o w3-xxlarge"></i>
-      <p>RESUME</p>
-    </a>
-    <!--
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-      <i class="fa fa-envelope w3-xxlarge"></i>
-      <p>CONTACT</p>
-    </a>
+<section id="portfolio">
+    <div class="align-items-center" style="width:100%; height:100%; overflow: hidden; position: absolute;">
+        <p class="greeting">Hi! Welcome to my portfolio.</p>
+    </div>
+    <div style="width:100%; height:100%; overflow: hidden; position: absolute;">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div> 
+    
+    <p class="message">all your dreams can come true<br>if you have the courage to pursue them</p>
+    <!-- 
+    <div style="width:100%; height:100%; overflow: hidden; position: absolute;">
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+          <div class="circle"></div>
+        </div>
+    </div>
     -->
-  </nav>
-
-  <!-- Navbar on small screens (Hidden on medium and large screens) -->
-  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-      <a href="#about" class="w3-bar-item w3-button" style="width:20% !important">ABOUT</a>
-      <a href="#skills" class="w3-bar-item w3-button" style="width:18% !important">SKILLS</a>
-      <a href="#education" class="w3-bar-item w3-button" style="width:25% !important">EDUCATION</a>
-      <a href="#work" class="w3-bar-item w3-button" style="width:17% !important">WORK</a>
-      <a href="#projects" class="w3-bar-item w3-button" style="width:20% !important">PROJECTS</a>
-    </div>
-  </div>
-
-  <!-- Page Content -->
-  <div class="w3-padding-large" id="main">
-
-    <!-- Header/Home -->
-    <header class="w3-container w3-padding-32 w3-center w3-white banner" id="home">
-      <img id="display-image" src="KAE-portrait.jpg" alt="my display image" class="w3-image" width="992" height="1108">
-      <h1 class="w3-jumbo">Kenneth Anthony Esdaile</h1>
-      <div class="banner-tiles">
-        <strong style="font-size: 20px;">Software Engineer</strong>
-      </div>
-      <div class="banner-tiles">
-        <address>New York, United States</address> 
-      </div>
-      <div class="banner-links">
-        <a href="linkedin.com/in/kanthonye"><i class="fa fa-linkedin w3-hover-opacity"></i> LinkedIn</a>
-        <a href="https://github.com/kanthonye"><i class="fa fa-github w3-hover-opacity"></i> GitHub</a>
-      </div>
-     
-    </header>
+</section>
 
 
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64">
+<div class="row separator"></div>
+<div class="row separator"></div>
 
-      <!-- About Section -->
-      <div class="section" id="about-section">
-        <h2 class="w3-text-mid-grey">About Me</h2>
-        <hr style="width:200px" class="w3-opacity">
-        <p>
-          Experienced software engineer with a strong background in designing and developing software solutions for
-          a variety of industries. Proficient in multiple programming languages, including Java, Python, and C++. Able
-          to work effectively in a team-oriented environment. Strong problem-solving and critical thinking abilities, 
-          with experience in full software development lifecycle, including requirements analysis, design, development, 
-          testing and deployment.
-        </p>
-      </div>
-      <!-- End About Section -->
-
-
-
-      <!-- Work Section -->
-      <div class="section" id="work-section">
-
-        <h2 class="w3-text-mid-grey">Work Experience</h2>
-        <div class="w3-container employment">
-          <div class="employment-employer-and-date">
-            <div><h6 class="w3-text-mid-grey employment-employer"> <strong>UCEntelligence - Rochester, New York, United States</strong> </h6></div>
-            <div class="w3-text-teal text-right employment-date"><i class="fa fa-calendar fa-fw"></i>March 2022 - Present</div>
-          </div>
-          <h5 class="col-1-w4 w3-text-mid-grey no-margin employment-position"><strong>Full Stack Develope (remote)</strong></h5>
-          <p class="no-margin employment-description">
-            Responsible for the full software development lifecycle of UCEntelligence YinFo mobile app 
-            and UCEntelligence web app, including requirements analysis, design, development, testing, 
-            and deployment.
-          </p>
-        </div>
-
-        <div class="w3-container employment">
-          <div class="employment-employer-and-date">
-            <div><h6 class="w3-text-mid-grey employment-employer"> <strong>LaGuardia Community College - Long Island City, NY</strong> </h6></div>
-            <div class="w3-text-teal text-right employment-date"><i class="fa fa-calendar fa-fw"></i>Aug 2014 - Sept 2014</div>
-          </div>
-          <h5 class="col-1-w4 w3-text-mid-grey no-margin employment-position"><strong>Web Developer Intern</strong></h5>
-          <p class="col-1-w4 no-margin employment-description">
-            • Developed landing pages, dashboards and online applications using Javascript, HTML and CSS<br>
-            • Developed user interfaces with modern JavaScript frameworks, HTML and CSS<br>
-            • Used newly learned programming capabilities in PHP, SQL and JavaScript to develop a scheduling system
-          </p>
-        </div>
+<section class="reveal" id="about-me">
+    <div class="row" id="main-content">
         
-      </div>
-      <!-- End Work Section -->
+        <div class="about-me align-items-center col-wise">
+            <div class="align-items-center">
+            </div>
 
+            <div class="align-items-center col-wise">
+                <div class="circle-effect-container">
 
+                    <div class="circle-effect" style="animation-delay: 0s"></div>
+                    <div class="circle-effect" style="animation-delay: 1s"></div>
+                    <div class="circle-effect" style="animation-delay: 2s"></div>
+                    <div class="circle-effect" style="animation-delay: 3s"></div>
+                    <div class="circle-effect" style="animation-delay: 4s"></div>
+                    <!-- <div class="faded-circles">
+                        <div><div><div><div><div><div></div></div></div></div></div></div>
+                    </div> -->
+                </div>
+                <div class="align-items-center">
+                    <div id="portrait"></div>
+                </div>
+                <div class="align-items-center">
+                    <p class="profession">
+                        <h2>Kenneth Anthony Esdaile</h2>
+                    </p>
+                </div>
+                <div class="align-items-center">
+                    <p class="profession">
+                        software engineer
+                    </p>
+                </div>
+            </div>
 
-      <!-- Education Section -->
-      <div class="section" id="education-section">
-        <h2 class="w3-text-mid-grey">Education</h2>
+            <div class="backdrop"></div>
 
-        <div class="w3-container education">
-          <div class="education-campus-and-date">
-            <div><h6 class="w3-text-mid-grey education-campus"> <strong>Queens College, City University of New York - Flushing, NY</strong> </h6></div>
-            <div class="w3-text-teal text-right education-date"><i class="fa fa-calendar fa-fw"></i>Sept 2014 - Aug 2019</div>
-          </div>
-          <div class="col-1-w4 w3-text-mid-grey no-margin education-degree">Bachelor of Science in <strong>Computer Science</strong></div>
+            <div class="align-items-center col-wise">
+                <div class="discription align-items-center col-wise">
+                    <h1 class="heading">About Me</h1>
+                    <br/>
+                    <p>
+                        Greetings, my name is Kenneth Anthony Esdaile. I am a software engineer currently base in New York. I am a passionate software engineer with a love for problem-solving and creating innovative solutions. I thrive on tackling complex challenges and delivering high-quality products. Whether it's developing efficient algorithms or designing intuitive user interfaces, I am dedicated to delivering excellence in everything I do. 
+                        <br><br>
+                        In my spare time, I take on personal projects that allow me to further expand my knowledge and experience in software engineering. These projects not only enable me to stay up-to-date with the latest technologies and trends, but also provide me with the opportunity to experiment and develop innovative solutions. Through these endeavors, I am able to continually improve my skills and bring fresh perspectives to my work.
+                        <br><br>
+                        Let's build something great together.
+                    </p>
+                    <br/>
+                    <ul class="contact-links">
+                        <li>
+                            <a class="contact" href="mailto:k.a.esdaile@gmail.com">
+                                ContactMe
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact" target="_blank" href="https://www.linkedin.com/in/kanthonye/">
+                                LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact" target="_blank" href="https://github.com/kanthonye">
+                                GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row separator"></div>
+            <div class="row separator"></div>
+
+            <div class="reveal employments">
+                <h1 class="heading">Relevent Employments</h1>
+                <div class="employment shade-l">
+                    <div class="inner">
+                        <div class="leftside">
+                            <div class="row">
+                                <time datetime="2021-06-15">06 / 2021</time> <br/> <time>current</time>
+                            </div>
+                        </div>
+                        <div class="rightside">
+                            <div class="align-items-left  col-wise">
+                                <p class="title">Full Stack Developer (remote)</p>
+                                <p class="company">UCEntelligence</p>
+                                <address>Rochester, NY, US</address>
+                            </div>
+                            <p class="description">
+                                As the lead software developer for UCEntelligence YinFo mobile app and the UCEntelligence web app, I oversaw the full software development lifecycle, from initial requirements analysis and design to development, testing, and deployment. Utilizing my expertise in software development methodologies, I ensured that all aspects of the project adhered to best practices and met the highest standards of quality. By effectively managing the development process and collaborating closely with cross-functional teams, I successfully delivered robust and reliable software solutions that met or exceeded customer expectations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row separator"></div>
+
+                <div class="employment shade-r">
+                    <div class="inner">
+                        <div class="leftside">
+                            <div class="row">
+                                <time datetime="2021-06-15">08 / 2014</time> <br/> <time>09 / 2014</time>
+                            </div>
+                        </div>
+                        <div class="rightside">
+                            <div class="align-items-left  col-wise">
+                                <p class="title">Web Developer (Internship)</p>
+                                <p class="company">LaGuardia Community College</p>
+                                <address>Long Island City, NY, US</address>
+                            </div>
+                            <p class="description">
+                                As a software engineer, I developed and implemented dynamic landing pages, dashboards, and online applications utilizing my expertise in JavaScript, HTML, and CSS. With a focus on creating intuitive user experiences, I designed and developed modern user interfaces utilizing cutting-edge JavaScript frameworks and advanced techniques in HTML and CSS. Additionally, I leveraged newly acquired skills in PHP, SQL, and JavaScript to develop a sophisticated scheduling system, further expanding my capabilities in software development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row separator"></div>
+
+            <div class="reveal area-education">
+                <h1>Education</h1>
+                <div class="align-items-center col-wise" id="education">
+                    <div class="institution">
+                        <div class="date">
+                            <time class="align-items-center">
+                                <p>
+                                    <span class="month">Aug</span>
+                                    -
+                                    <span class="year">2019</span>
+                                </p>
+                            </time>
+                        </div>
+                        <div class="university" >
+                            <div class="degree">
+                                <p>
+                                    Bachelor's Degree In Computer Science
+                                </p>
+                            </div>
+                            <div class="name">
+                                <p>
+                                    Queens College, City University of New York
+                                </p>
+                            </div>
+                            <address class="address">
+                                <p>
+                                    65-30 Kissena Blvd | Queens, NY, 11367
+                                </p>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="institution">
+                        <div class="date">
+                            <time class="align-items-center">
+                                <p>
+                                    <span class="month">Aug</span>
+                                    -
+                                    <span class="year">2014</span>
+                                </p>
+                            </time>
+                        </div>
+                        <div class="university" >
+                            <div class="degree">
+                                <p>
+                                    Associate's Degree In Computer Science
+                                </p>
+                            </div>
+                            <div class="name">
+                                <p>
+                                    LaGuardia Community College
+                                </p>
+                            </div>
+                            <address class="address">
+                                <p>31-10 Thomson Avenue, Long Island City, NY 11101 USA</p>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+            
+        <div class="row separator"></div>
 
-        <div class="w3-container education">
-          <div class="education-campus-and-date">
-            <div><h6 class="w3-text-mid-grey education-campus"> <strong>LaGuardia Community College - Long Island City, NY</strong> </h6></div>
-            <div class="w3-text-teal text-right education-date"><i class="fa fa-calendar fa-fw"></i>Sept 2012 - Aug 2014</div>
-          </div>
-          <div class="col-1-w4 w3-text-mid-grey no-margin education-degree">
-            Associate of Science in <strong>Computer Science</strong><br>
-          </div>
+        <div class="reveal area-skills">
+            <h1 class="heading">Skills</h1>
+            <ul class="skills-list">
+                <li> C++        </li>
+                <li> Java       </li>
+                <li> PHP        </li>
+                <li> Python     </li>
+                <li> React Native </li>
+                <li> Javascript </li>
+                <li> HTML </li>
+                <li> CSS </li>
+                <li> SQL </li>
+                <li> Database </li>
+
+                <li> GLSL (OpenGL Shading Language) </li>
+                <li> OpenGL API </li>
+                <li> Vulkan API </li>
+                <li> C#         </li>
+                <li> Object-Oriented Programming (OOP) </li>
+                <li> Data-Structure and Algorithm </li>
+
+                <li> 3D Vector Mathematics </li>
+                <li> Laravel </li>
+                <li> Git </li>
+                <li> GUI Programming & Designing </li>
+                <li> Software Development </li>
+                <li> Mobile Development </li>
+                <li> Graphic Designing </li>
+                <li> Debugging & Troubleshooting </li>
+                <li> Photoshop & Illustrator </li>
+            </ul>
         </div>
-
-      </div>
-      <!-- End of Education Section -->
-
-
-
-      <!-- Skills Section -->
-      <div class="section" id="skills-section">
-        <h2 class="w3-text-mid-grey">My Skills</h2>
-
-        <div class="skills-panel">
-          <div class="skill">C/C++</div>
-          <div class="skill">Java</div>
-          <div class="skill">PHP</div>
-          <div class="skill">Python</div>
-          <div class="skill">JavaScript</div>
-          <div class="skill">React Native</div>
-          <div class="skill">HTML/HTML5</div>
-          <div class="skill">CSS</div>
-          <div class="skill">OpenGL Shading Language (GLSL)</div>
-          <div class="skill">OpenGL API</div>
-          <div class="skill">Vulkan API</div>
-          <div class="skill">Laravel</div>
-          <div class="skill">Git</div>
-          <div class="skill">XML</div>
-          <div class="skill">Web Development</div>
-          <div class="skill">Software Development</div>
-          <div class="skill">Full Stack Developer</div>
-          <div class="skill">3D Vector Mathematics</div>
-          <div class="skill">GUI Programming and Design</div>
-          <div class="skill">Debugging</div>
-          <div class="skill">Graphic Designing</div>
-          <div class="skill">XML</div>
-        </div>
-        <!-- 
-        <div class="w3-light-gray">
-          <div class="w3-teal" style="height:10px;width:95%"></div>
-        </div> 
-        -->
-      </div>
-      <!-- End Of Skills Section -->
-
-
-
-      <!-- Project Section -->
-      <div class="section" id="projects-section">
-        <h2 class="w3-text-mid-grey">Featured Projects</h2>
-        <!--
-        <div class="w3-container grid-four-col">
-          <h6 class="col-1-w3 w3-text-mid-grey no-margin"><strong>Game Engine</strong></h6>
-          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Feb 2016-present</div>
-          <p class="col-1-w4">need description...
-          </p>
-          <div class="col-1-w4">
-            <p style="padding:0px; margin:0px">
-              <span class="w3-text-red">requirements</span>: C/C++, OpenGL API 4.0, OpenGL Shadering Language 4.0 (GLSL), Data Structures & Algorithms, Linear Algebra, 3D Vector Calculus, Xcode, etc... <br>
-              source: <span class="w3-text-blue">code</span>
-            </p>
-          </div>
-        </div>
-
-        <hr class="w3-opacity">
-
-        <div class="w3-container grid-four-col">
-          <h6 class="col-1-w3 w3-text-mid-grey no-margin"><strong>Physic Engine</strong></h6>
-          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Oct 2019-present</div>
-          <p class="col-1-w4">need description...
-          </p>
-          <div class="col-1-w4">
-            <p style="padding:0px; margin:0px">
-              <span class="w3-text-red">requirements</span>: C/C++, OpenGL API 4.0, OpenGL Shadering Language 4.0 (GLSL), Linear Algebra, 3D Vector Calculus, Xcode <br>
-              source: <span class="w3-text-blue">code</span>
-            </p>
-          </div>
-        </div>
-        -->
-        <hr class="w3-opacity">
-
-        <div class="w3-container grid-four-col">
-          <h6 class="col-1-w3 w3-text-mid-grey no-margin"><strong>GUI Library</strong></h6>
-          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Feb 2020</div>
-          <p class="col-1-w4">There are many versions of this project. The first version I created in 2016; however, as time goes on, I came up with better ways of coding a GUI system. So I would redo this project using the logics from the previous one to improve on and build a better system. The latest version has a dynamic typesetting system, a decoupled messenger for even notification, object ref counting support, and much cleaner coding.
-          </p>
-          <div class="col-1-w4">
-            <p style="padding:0px; margin:0px">
-              <span class="w3-text-red">requirements</span>: C/C++, OpenGL API 4.0, OpenGL Shadering Language 4.0 (GLSL), Xcode <br>
-              source: <span class="w3-text-blue">code</span>
-            </p>
-          </div>
-        </div>
-
-        <hr class="w3-opacity">
-
-        <div class="w3-container grid-four-col">
-          <h6 class="col-1-w3 w3-text-mid-grey no-margin"><strong>Older Web-Portfolio</strong></h6>
-          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Sept 2019</div>
-          <p class="col-1-w4">My first web portfolio
-          </p>
-          <div class="col-1-w4">
-            <p style="padding:0px; margin:0px">
-              <span class="w3-text-red">requirements</span>: HTML, CSS, JavaScript, Visual Studio Code, Firefox Web-Browser <br>
-              source: <a href="https://kanthonye.github.io/portfolio/" target="_blank"><span class="w3-text-blue">code</span></a>
-            </p>
-          </div>
-        </div>
-
-        <hr class="w3-opacity">
-
-        <div class="w3-container grid-four-col">
-          <h6 class="col-1-w3 w3-text-mid-grey no-margin"><strong>Programming Language Interpreter</strong></h6>
-          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>May 2019</div>
-          <p class="col-1-w4">Principles of Programming Languages course project, while I was attending Queen College. This project comes in 4 stages. The first is to build a DFA for the type free programming language, a language similar to Python and JavaScript. The next is to write a parser to parse instructions from the language. The 3rd stage is to write an interpreter to interpret the instructions parsed from the language. The 4th and final stage is to support array allocation and index operations.
-          </p>
-          <div class="col-1-w4">
-            <p style="padding:0px; margin:0px">
-              <span class="w3-text-red">requirements</span>: C/C++, Xcode <br>
-              source: <a href="https://github.com/kanthonye/school-projects/tree/master/qc/CS316/Interpreter"><span class="w3-text-blue">code</span></a>
-            </p>
-          </div>
-        </div>
-
-        <hr class="w3-opacity">
-
-        <div class="w3-container grid-four-col">
-          <h6 class="col-1-w3 w3-text-mid-grey no-margin"><strong>Interactive 3D scene</strong></h6>
-          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Dec 2018</div>
-          <p class="col-1-w4">This is the final project I did for the course Intro to Computer Graphics while attending queens college. The premise for this project is to use prior knowledge learned during and before taking the course to build something in 2D or 3D. I created a 3D scene made up of a snowman, a table, some chairs, a rotating ceiling fan, and a free moving 3D camera.
-          </p>
-          <div class="col-1-w4">
-            <p style="padding:0px; margin:0px">
-              <span class="w3-text-red">requirements</span>: C/C++, OpengGL API 2.1, Xcode, Data Structures <br>
-              source: <a href="https://github.com/kanthonye/school-projects/blob/master/qc/CS368/Basic3DInteractEnvironment.cpp"><span class="w3-text-blue">code</span></a>
-            </p>
-          </div>
-        </div>
-
-        <hr class="w3-opacity">
-
-        <div class="w3-container grid-four-col">
-          <h6 class="col-1-w3 w3-text-mid-grey no-margin"><strong>Realtime Continuous LOD Quadtree Terrain Rendering</strong></h6>
-          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Sept-2016</div>
-          <p class="col-1-w4">This project is an improvement to an earlier project I worked on rendering landscape using the OpenGL API. The older project draws the entire terrain in full detail. Increasing the terrain tile range will lower the frame rate because you are rendering more tiles and more triangles. On top of this detail in the distance can not be seen. It is a waste to have so many triangles drawn in the distance when those triangles are nearly as small as pixels. Level Of Detail (LOD) makes the terrain mesh dynamic, therefore the terrain tiles changes based on the observers' position. Terrain tiles closer to the viewer get rendered in full detail. As the distance between the viewer and terrain tile increases, fewer triangles are used to draw the terrain tiles. Because of this, the terrain tiles need to update whenever the viewer moves.
-          </p>
-          <div class="col-1-w4">
-            <p class="no-margin">
-              <span class="w3-text-red">requirements</span>: C/C++, OpengGL API 4.1, OpenGL Shading Language (GLSL), Xcode, Data Structures, 3D vector mathematics<br>
-              source: <span class="w3-text-blue">code</span>
-            </p>
-          </div>
-        </div>
-
-        <hr class="w3-opacity">
-
-        <div class="w3-container grid-four-col">
-          <h6 class="col-1-w3 w3-text-mid-grey no-margin"><strong>Collada Geometry Parser</strong></h6>
-          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Sept 2016</div>
-          <p class="col-1-w4">Free libraries exist to handle loading 3D geometry from files like Collada. However, as a software engineer, I like challenging myself and learning how to do things, so I decided to code my own Collada file loader.
-          </p>
-          <div class="col-1-w4">
-            <p class="no-margin">
-              <span class="w3-text-red">requirements</span>: C/C++, OpenGL API, GLSL, String Parsing, Xcode<br>
-              source: <span class="w3-text-blue">code</span>
-            </p>
-          </div>
-        </div>
-
-        <hr class="w3-opacity">
-
-        <div class="w3-container grid-four-col">
-          <h6 class="col-1-w3 w3-text-mid-grey no-margin"><strong>Wavefront OBJ File Parser</strong></h6>
-          <div class="col-4-w1 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Sept 2015</div>
-          <p class="col-1-w4">Rendering multiple lights a few boxes and some spheres is cool and all. But rendering more complex 3d objects, rendering a scene is even cooler. Game Programming and Engine development have been an interest of mine for many years now. After graduating from LaGuardia Community College, I was eager to learn 3D graphics programming. One thing that always comes up while learning the OpenGL API is how to render more complex objects. Doing some research lead me to the OBJ file format. There is much information on the web about this, which was plenty of help while writing my first parser.
-          </p>
-          <div class="col-1-w4">
-            <p class="no-margin">
-              <span class="w3-text-red">requirements</span>: C/C++, OpenGL API, GLSL, String Parsing, Xcode<br>
-              source: <span class="w3-text-blue">code</span>
-            </p>
-          </div>
-        </div>
-
-        <hr class="w3-opacity">
-
-        <div class="w3-container grid-four-col">
-          <h6 class="col-1-w3 w3-text-mid-grey no-margin"><strong>3D Vector Mathematics Library</strong></h6>
-          <div class="col-4-w3 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Sept-2014</div>
-          <p class="col-1-w4">One of the first projects I tackled when I graduated from Laguardia Community College is a 3D vector math library. 3D vector math library is the core component of all 3D graphical applications. This project was necessary for me to improve my programming and mathematical skills, and was the first step toward making 3D graphics software. I start this project in Sept-2014 but continue to update it over time as needed.
-          </p>
-          <div class="col-1-w4">
-            <p class="no-margin">
-              <span class="w3-text-red">requirements</span>: C/C++, Linear Algebra, Vector Calculus Math, Xcode<br>
-              source: <span class="w3-text-blue">code</span>
-            </p>
-          </div>
-        </div>
-
-        <hr class="w3-opacity">
-
-        <div class="w3-container grid-four-col">
-          <h6 class="col-1-w3 w3-text-mid-grey no-margin"><strong>Blogspot Template</strong></h6>
-          <div class="col-4-w3 w3-text-teal text-right"><i class="fa fa-calendar fa-fw"></i>Sept-2013</div>
-          <p class="col-1-w4">Back when I use to draw a lot, much more than I do now. I started a blog to showcase some of my artworks. Before this project, I had some web-programming experience learned while in high school, and I used to make myspace templates. I had this idea for my BlogSpot blog template and could not find any template similar to the idea I had. So, I tinkered with the blogger HTML and CSS code and learned which part affects which part of my blog. Eventually, I learned enough and was ready to build my own. After building many templates, I came up with this template theme, which was my favorite.
-          </p>
-          <div class="col-1-w4">
-            <p class="no-margin">
-              <span class="w3-text-red">requirements</span>: HTML, CSS, Note Pad, Web Browser<br>
-              demo: <a href="http://kae-demo-orange.blogspot.com/?zx=14ebac9f116bfb07" target="_blank"><span class="w3-text-blue">orange</span></a>, <a href="https://artwork-template-dark.blogspot.com/?zx=228ca97706fe3c7e" target="_blank"><span class="w3-text-blue">black</span></a>
-            </p>
-          </div>
-        </div>
-
-        <hr class="w3-opacity">
-      </div>
-      <!-- Enf Of Project Section -->
-
-      
-      <!-- Contact Section -->
-      <!--
-      <div class="w3-content w3-text-grey" id="contact">
-        <h2 class="w3-text-mid-grey">Contact Me</h2>
-        <form action="/action_page.php" target="_blank">
-          <p><input class="w3-input" type="text" placeholder="Name" required name="Name"></p>
-          <p><input class="w3-input" type="text" placeholder="Email" required name="Email"></p>
-          <p><input class="w3-input" type="text" placeholder="Subject" required name="Subject"></p>
-          <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-          <p>
-            <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-              <i class="fa fa-paper-plane"></i> SEND MESSAGE
-            </button>
-          </p>
-        </form>
-      </div>
-      -->
-      <!-- End Contact Section -->
-
     </div>
+</section>
 
-    <hr class="w3-opacity">
 
-    <!-- Footer -->
-    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge w3-center">
-      <a href="https://github.com/kanthonye"> <i class="fa fa-github w3-hover-opacity"></i> </a>
-      <a href="https://www.linkedin.com/in/kanthonye/"> <i class="fa fa-linkedin w3-hover-opacity"></i> </a>
-      <p class="w3-medium w3-center">Designed by <strong>Kenneth Anthony Esdaile</strong></p>
-    <!-- End footer -->
-    </footer>
 
-  </div>
-  <!-- End Of Page Content -->
+<div class="row separator"></div>
+<div class="row separator"></div>
+
+<section  class="reveal">
+    <div class="row" id="main-content">
+        <div class="row featured-projects" name="repos"> 
+            <h1 class="row heading" id="my-projects" >
+                Featured Project
+            </h1>
+            <script>
+                write_my_projects();
+            </script>
+        </div> 
+    </div>
+</section>
+
+
+
+<div class="row separator"></div>
+ 
+<div class="row foot-note">
+    <div class="row">
+        Designed & created by Kenneth A Esdaile. Oct-2019
+    </div>
+</div>
 
 </body>
 
@@ -585,10 +656,10 @@ $(document).ready(function(){
       var hash = this.hash;
 
       // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (500) specifies the number of milliseconds it takes to scroll to the specified area
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 500, function(){
+      }, 800, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
@@ -596,5 +667,24 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+function reveal() 
+  {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) 
+    {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  window.addEventListener("scroll", reveal);
 </script>
+
 </html>

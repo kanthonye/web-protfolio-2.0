@@ -22,27 +22,27 @@ function write_my_projects()
         var k = i % 2;
         if ( k == 0 )
         {
-            document.write( "<div class=\"reveal row project\">" );
+            document.write( "<div class=\"reveal project\">" );
         }
         else 
         {
-            document.write( "<div class=\"reveal row project-r\">" );
+            document.write( "<div class=\"reveal project-r\">" );
         }
         document.write( "    <div class=\"area-image\">" );
-        document.write( "        <a class=\"row row-1\" target=\"_blank\" href=\""+ proj.url +"\">" );
+        document.write( "        <a class=\"row-1\" target=\"_blank\" href=\""+ proj.url +"\">" );
         document.write( "            <img class=\"image circle\" src=\""+ proj.img +"\" onerror=\"this.src='img/no-image.png'\" />");
         document.write( "        </a>" );
         document.write( "    </div>" );
         document.write( "    <article class=\"area-article\">" );
-        document.write( "        <div class=\"row area-date\">" );
-        document.write( "           <time class=\"row date\" datetime=\"2011-11\" >" );
+        document.write( "        <div class=\"area-date\">" );
+        document.write( "           <time class=\"date\" datetime=\"2011-11\" >" );
         document.write( "               "+ proj.date.month +"-"+ proj.date.year );
         document.write( "           </time>" );
         document.write( "        </div>" );
-        document.write( "        <div class=\"row row-2\">" );
-        document.write( "            <article class=\"row title\"><p>"+ proj.title +"</p></article>" );
-        document.write( "            <article class=\"row detail\">" );
-        document.write( "                <p class=\"row description\">"+ proj.discription +"</p>" );
+        document.write( "        <div class=\"row-2\">" );
+        document.write( "            <article class=\"title\"><p>"+ proj.title +"</p></article>" );
+        document.write( "            <article class=\"detail\">" );
+        document.write( "                <p class=\"description\">"+ proj.discription +"</p>" );
         document.write( "            </article>" );
         document.write( "            <div class=\"footer\">" );
         document.write( "              <ul class=\"tools\">\n" );

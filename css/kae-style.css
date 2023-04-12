@@ -507,6 +507,7 @@ address
 
 
 
+
 #navbar
 {
     position: fixed;
@@ -524,6 +525,7 @@ address
     /* clear: both; */
     transition: 0.5s;
     z-index: 10;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: -20px 10px 13px -15px rgba(0, 0, 0, 0.9);
 }
 #navbar:hover
@@ -538,10 +540,8 @@ address
     gap: 10px;
     list-style: none;
 }
-.navbar li
+#navbar li
 {
-    padding: 10px;
-    font-family: 'Rajdhani', sans-serif, courier, monospace;
     text-align: center;
 }
 
@@ -768,5 +768,31 @@ address
     {
         width: 100%;
         margin: 0%;
+    }
+
+    .about-me
+    {
+        padding: 0px;
+    }
+    .discription
+    {
+        width: 100% !important;
+    }
+
+    #navbar
+    {
+        padding: 10px;
+        border-radius: 5px;
+    }
+    #navbar ul
+    {
+        padding: 0px;
+        margin: 0px;
+        display: block;
+        /* border: 1px #fff solid; */
+    }
+    #navbar li
+    {
+        text-align: center;
     }
 }

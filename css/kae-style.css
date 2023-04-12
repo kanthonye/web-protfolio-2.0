@@ -234,14 +234,16 @@ section
 
 .content
 {
+	/* border: 5px solid #FFF; */
     min-width: 300px;
     max-width: 900px;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 .about-me
 {
 	padding: 10px 10px 20px 10px;
-	/* border: 1px solid #FFF; */
     z-index: 1;
 }
 #portrait
@@ -332,9 +334,7 @@ section
 
 .area-education
 {
-	/* border: 1px solid #fff; */
-    max-width: 600px;
-    min-width: 300px;
+    min-width: 100%;
     width: 100%;
 }
 .area-education h1
@@ -351,6 +351,7 @@ section
 }
 #education
 {
+	/* border: 1px solid #FFF; */
    background-color: #30234d;
    border-radius: 10px;
    width: 100%;
@@ -362,14 +363,14 @@ section
 
 .institution
 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: flex-start !important;
+    /* justify-content: space-between; */
     flex-direction: row;
     width: 100%;
 }
 .institution .university
 {
+    align-items: flex-start !important;
 	/* border: 1px solid #FFF; */
     flex: 3;
 }
@@ -450,21 +451,19 @@ address
 
 .employments
 {
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    /* border: 1px solid #FFF; */
 }
-.employment
-{
-    max-width: 600px;
-    min-width: 300px;
-    width: 100%;
-}
+
 .employment .inner
 {
-    display: flex;
-    justify-content: space-between;
+    /* border: 1px solid #FFF; */
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+    flex-direction: row !important;
+    /* justify-content: space-between; */
     padding: 30px;
     height: 100%;
     width: 100%;
@@ -505,6 +504,7 @@ address
 .employment .rightside
 {
     flex: 4;
+    align-items: flex-start !important;
 }
 
 .employment .description
@@ -674,80 +674,6 @@ address
 
 
 
-
-/* .skills{} */
-/* .skills .row
-{
-    padding: 2px;
-}
-.skills .spacer
-{
-    height: 20px;
-} */
-/* .area-education .heading
-{
-   float: right;
-}
-.area-education .education
-{
-   background-color: #30234d;
-   border-radius: 10px;
-   width: 100%;
-   padding: 30px 20px 0px 20px;
-   overflow: auto;
-   box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.3);
-}
-.area-education .education
-{
-   margin-bottom: 30px;
-   overflow: auto;
-}
-.area-education .education .date
-{
-   width: 20%;
-   overflow: auto;
-}
-.area-education .education .date .month
-{
-   color: #fff;
-}
-.area-education .education .date .year
-{
-   color: #fff;
-}
-.area-education .education .details
-{
-   width: 80%;
-   overflow: auto;
-}
-.area-education .education .degree
-{
-   color: #fff;
-} */
-
-
-
-
-
-
-/* .col
-{
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    float: left;
-    text-align: center;
-}
-.row
-{
-    position: relative;
-    display: table;
-    width: 100%;
-    text-align: center;
-} */
-
-
-
 /* Featured Project */
 
 .featured-projects .heading
@@ -758,8 +684,8 @@ address
 .project-r
 {
     width: 100%;
-    padding-right: 50px;
-    padding-left: 50px;
+    /* padding-right: 50px;
+    padding-left: 50px; */
     /* overflow-y: auto; */
     padding-top: 100px;
     /* border: 1px solid #fff; */
@@ -954,18 +880,18 @@ address
 
 @media only screen and (max-width: 700px) 
 {
-    .project   .area-article ,
-    .project-r .area-article
-    {
-        width: 100%;
-        margin: 0;
-    }
     .project   .area-image ,
     .project-r .area-image
     {
-        margin: 0px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: -20px;
+        margin-right: 0px;
+        margin-left: 0pm;
+    }
+
+    .project .area-article,
+    .project-r .area-article
+    {
+        width: 100%;
+        margin: 0%;
+        border: 1px #fff solid;
     }
 }

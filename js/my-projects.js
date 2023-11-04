@@ -112,8 +112,8 @@ AddProjects
     "My Web Portfolio"
 ,   { month: "Oct", year:  "2019" }
 ,   [ "Javascript", "HTML", "CSS" ]
-,   [ ]
-,   "#"
+,   [ { icon: "github", url: "https://github.com/kanthonye/web-protfolio-2.0" } ]
+,   "https://github.com/kanthonye/web-protfolio-2.0"
 ,   "img/site-img.png"
 ,   "I designed and developed my personal web portfolio using HTML, CSS, and JavaScript. The portfolio showcases my skills and experience as a software engineer, featuring an intuitive user interface and a clean, modern design. Leveraging my expertise in front-end web development, I incorporated responsive design techniques and optimized the site for performance and usability across a variety of devices. Additionally, I utilized JavaScript to add interactive elements and animations, creating a dynamic and engaging user experience. This project not only highlights my technical abilities in web development, but also serves as a showcase of my personal brand and professional accomplishments."
 );

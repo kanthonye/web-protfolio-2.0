@@ -100,10 +100,10 @@ AddProjects
 ( 
     "My Game Engine"
 ,   { month: "Jan", year:  "2023" }
-,   [ "C++", "GLSL", "Vulkan API", "Data Structure & Algorithm", "Vector Mathematics", "OPP" ]
+,   [ "C++", "GLSL", "Vulkan API", "Data Structure & Algorithm", "Vector Mathematics" ]
 ,   [ { icon: "github", url: "https://github.com/kanthonye/KEGE" } ]
 ,   "https://github.com/kanthonye/KEGE"
-,   "img/coding-clipart.jpg"
+,   "img/Screenshot-2023-11-04-at-1.36.21-PM.png"
 ,   "This project involved the creation of a game engine using C++ and a range of related technologies. To handle input from the system, an application object was created to manage the engine object, which in turn was responsible for managing scene objects. An abstract graphics object was created to handle all graphics commands and to create graphics objects such as vertex-buffers, index-buffers, textures, and graphics-pipelines. One notable aspect of the project was the implementation of a pool-managing system using C++ templates to store data of any kind. The project also involved the creation of a Vulkan graphics object and a vector math library, both of which were used extensively throughout the development process. <br/><br/>Other key components of the project included the creation of a scene object, an Entity Component System (ECS) to manage scene entities, and the development of various graphics-related features such as graphics-pipelines, mesh objects, material objects, and a graphical user interface (GUI). Overall, this project provided a comprehensive and flexible game engine capable of supporting a wide range of game development needs. Skills required for this project: C++, Vulkan API, Data Structure & Algorithm, Vector Mathematics, Memory Management, OPP."
 );
 
@@ -133,7 +133,7 @@ AddProjects
 ( 
     "interactive 3D scene (Christmas Theme)"
 ,   { month: "Dec", year:  "2018" }
-,   [ "C++" , "OpenGL API", "Data Structure & Algorithm", "Vector Mathematics", "OPP" ]
+,   [ "C++" , "OpenGL API", "Data Structure & Algorithm", "Vector Mathematics" ]
 ,   [ { icon: "github", url: "https://github.com/kanthonye/school-projects/blob/master/qc/CS368/Basic3DInteractEnvironment.cpp" } ]
 ,   "https://github.com/kanthonye/school-projects/blob/master/qc/CS368/Basic3DInteractEnvironment.cpp"
 ,   "img/simple-scene.gif"
@@ -146,7 +146,7 @@ AddProjects
 ( 
     "Realtime Continuous LOD Quadtrees Terrain Rendering"
 ,   { month: "Sep", year:  "2016" }
-,   [ "C++", "GLSL", "OpenGL API", "Data Structure & Algorithm", "Vector Mathematics", "OPP" ]
+,   [ "C++", "GLSL", "OpenGL API", "Data Structure & Algorithm", "Vector Mathematics" ]
 ,   [ ]
 ,   "proj-url"
 ,   "img/landscape-0.png"

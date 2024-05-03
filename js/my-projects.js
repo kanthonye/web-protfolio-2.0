@@ -77,6 +77,17 @@ function AddProjects( _title, _date, _skills, _links, _url, _img, _discription )
 
 AddProjects
 ( 
+    "Solo Indie Game Development: Engine & Programming"
+,   { month: "Jan", year:  "2017" }
+,   [ "C++", "GLSL", "Vulkan API", "Data Structure & Algorithm", "Vector Mathematics" ]
+,   [ { icon: "github", url: "https://github.com/kanthonye/KEGE" } ]
+,   "https://github.com/kanthonye/KEGE"
+,   "img/Screenshot-2023-11-04-at-1.36.21-PM.png"
+,   "This project involved the creation of a game engine using C++ and a range of related technologies. To handle input from the system, an application object was created to manage the engine object, which in turn was responsible for managing scene objects. An abstract graphics object was created to handle all graphics commands and to create graphics objects such as vertex-buffers, index-buffers, textures, and graphics-pipelines. One notable aspect of the project was the implementation of a pool-managing system using C++ templates to store data of any kind. The project also involved the creation of a Vulkan graphics object and a vector math library, both of which were used extensively throughout the development process. <br/><br/>Other key components of the project included the creation of a scene object, an Entity Component System (ECS) to manage scene entities, and the development of various graphics-related features such as graphics-pipelines, mesh objects, material objects, and a graphical user interface (GUI). Overall, this project provided a comprehensive and flexible game engine capable of supporting a wide range of game development needs. Skills required for this project: C++, Vulkan API, Data Structure & Algorithm, Vector Mathematics, Memory Management, OPP."
+);
+
+AddProjects
+( 
     "E-Commerce Shopping Store"
 ,   { month: "June", year:  "2023" }
 ,   [ "React", "JavaScript", "CSS", "HTML" ]
@@ -84,6 +95,14 @@ AddProjects
 ,   "https://github.com/kanthonye/e-commerce-web-app/tree/main"
 ,   "img/project-e-comm.png"
 ,   `
+<strong>Project Goal:</strong>
+<br/><br/>
+Develop a prototype functional game engine with a focus on core functionalities and utilize it to create a basic, playable game as a solo indie developer.
+
+<br/><br/>
+<strong>Key Activities:</strong>
+<br/><br/>
+
 As a testament to my expertise in React.js and my commitment to continuous learning, I proudly present my latest project—a comprehensive, feature-rich e-commerce online store. Crafted from scratch using React.js in the renowned Visual Studio Code (VSCode) editor, this project allowed me to put my skills to the test and further expand my knowledge in web development.
 <br/><br/>
 The primary motivation behind embarking on this ambitious endeavor was to challenge myself and push the boundaries of my React.js skills. By single-handedly developing a full-fledged e-commerce website, I honed my abilities in component-based architecture, state management, and React Router, among other vital concepts.
@@ -98,8 +117,8 @@ Explore the project, experience the immersive shopping journey, and witness the 
 
 AddProjects
 ( 
-    "My Game Engine"
-,   { month: "Jan", year:  "2023" }
+    "Solo Indie Game Development: Engine & Programming"
+,   { month: "Jan", year:  "2017" }
 ,   [ "C++", "GLSL", "Vulkan API", "Data Structure & Algorithm", "Vector Mathematics" ]
 ,   [ { icon: "github", url: "https://github.com/kanthonye/KEGE" } ]
 ,   "https://github.com/kanthonye/KEGE"

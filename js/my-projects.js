@@ -95,23 +95,23 @@ AddProjects
 ,   "https://github.com/kanthonye/e-commerce-web-app/tree/main"
 ,   "img/project-e-comm.png"
 ,   `
-<strong>Project Goal:</strong>
-<br/><br/>
-Develop a prototype functional game engine with a focus on core functionalities and utilize it to create a basic, playable game as a solo indie developer.
+<strong> Project Goal: </strong>
 
-<br/><br/>
-<strong>Key Activities:</strong>
-<br/><br/>
+<li> Develop a prototype functional game engine with a focus on core functionalities and utilize it to create a basic, playable game as a solo indie developer. </li>
 
-As a testament to my expertise in React.js and my commitment to continuous learning, I proudly present my latest project—a comprehensive, feature-rich e-commerce online store. Crafted from scratch using React.js in the renowned Visual Studio Code (VSCode) editor, this project allowed me to put my skills to the test and further expand my knowledge in web development.
-<br/><br/>
-The primary motivation behind embarking on this ambitious endeavor was to challenge myself and push the boundaries of my React.js skills. By single-handedly developing a full-fledged e-commerce website, I honed my abilities in component-based architecture, state management, and React Router, among other vital concepts.
-<br/><br/>
-With this project, I successfully created an end-to-end e-commerce solution that includes key features such as product listings, shopping cart functionality, secure payment processing, and user account management. The project showcases my ability to integrate complex systems and deliver a cohesive and intuitive user experience.
-<br/><br/>
-By featuring my full-fledged e-commerce online store project in my web portfolio, I aim to highlight my proficiency in React.js, as well as my determination to take on challenging projects and continuously expand my skills. It stands as a testament to my passion for web development and my commitment to delivering high-quality, impactful solutions.
-<br/><br/>
-Explore the project, experience the immersive shopping journey, and witness the culmination of my efforts in creating a remarkable e-commerce online store powered by React.js, CSS, and HTML.
+<strong> Key Activities: </strong>
+
+<li> Learn core game development concepts (rendering, physics, game loop, audio, animation, and memory management). </li>
+<li> Implement core functionalities within the engine (game loop, rendering, scene management, input handling, collision detection, etc) </li>
+<li> Build an entity-component-system for representing entities in the scene. </li>
+<li> Build a level-of-detail quad-tree terrain to support both flat-terrain and spherical-terrain for planetary rendering. </li>
+<li> Develop an immediate mode graphical-user-interface (GUI) library. </li>
+<li> (Optional) Explored additional features like audio, menus, level design, atmospheric scattering, water rendering, custom scripting system and virtual machine, etc. </li>
+
+<strong> Outcomes: </strong>
+
+<li> Honed software development skills through the development process. </li>
+<li> Gained valuable experience in solo game development and the software development lifecycle. </li>
 `
 );
 

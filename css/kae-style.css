@@ -194,13 +194,13 @@ section
 .circle-effect-container
 {
     position: absolute;
-    max-height:700px;
-    max-width:700px;
-    min-height:200px;
-    min-width:200px;
-    height:100%;
-    width:100%;
-    margin-top:-6.4%;
+    /* max-height:700px; */
+    /* max-width:700px; */
+    min-height:700px;
+    min-width:700px;
+    /* height:100%; */
+    /* width:100%; */
+    margin-top:-7.0%;
     z-index: -1;
     /* border: 1px solid #FFF; */
     display: flex;
@@ -565,71 +565,58 @@ address
 
 
 
-
-
 /* Featured Project */
 
 .featured-projects .heading
 {
     padding-bottom: 50px;
 }
-.project ,
-.project-r
+.project
 {
     width: 100%;
-    /* padding-right: 50px;
-    padding-left: 50px; */
-    /* overflow-y: auto; */
-    padding-top: 100px;
+    margin-bottom: 50px;
+    padding-top: 150px;
     /* border: 1px solid #fff; */
 }
-.project::after ,
-.project-r::after
+.project::after
 {
     height: 200px;
 }
 
-.project   .area-image ,
-.project-r .area-image
+.project div
+{
+    display: flex;
+}
+
+.project .area-image
 {
     position: absolute;
 }
 .project .area-image
 {
     top: 0px;
-    margin-right: 50%;
-    /* border: 1px solid #f00; */
-}
-.project-r .area-image
-{
-    top: 0px;
-    margin-left: 50%;
+    /* margin-right: 50%; */
     /* border: 1px solid #f00; */
 }
 .project   .area-image ,
-.project-r .area-image ,
-.project   .area-image .row-1 ,
-.project-r .area-image .row-1
+.project   .area-image .row-1
 {
-    height: 250px;
-    width:  250px;
+    height: 350px;
+    width:  350px;
     /* border-bottom: 5px solid #fff; */
 }
-.project   .area-image .row-1 ,
-.project-r .area-image .row-1
+.project .area-image .row-1
 {
     transition: 0.5s;
     z-index: 0;
 }
-.project   .area-image .row-1:hover ,
-.project-r .area-image .row-1:hover
+.project .area-image .row-1:hover
 {
-    height: 300px;
-    width:  300px;
+    height: 360px;
+    width:  360px;
     z-index: 10;
 }
-.project   .area-image .row-1 .image ,
-.project-r .area-image .row-1 .image
+.project .area-image .row-1 .image
 {
     border: rgb(48,36,76) 10px solid;
     border-radius: 50%;
@@ -638,23 +625,16 @@ address
     transition: 0.5s;
     opacity: 0.2;
 }
-.project   .area-image .row-1 .image:hover ,
-.project-r .area-image .row-1 .image:hover
+.project .area-image .row-1 .image:hover
 {
     opacity: 1.0;
 }
-.project   .area-article
+.project .area-article
 {
-    width: 80%;
-    margin-left: 20%;
+    width: 100%;
 }
-.project-r .area-article
-{
-    width: 80%;
-    margin-left: -20%;
-}
-.project   .area-article .row-2 ,
-.project-r .area-article .row-2
+
+.project .area-article .row-2
 {
     position: relative;
     width: 100%;
@@ -665,38 +645,40 @@ address
     background: linear-gradient(-90deg, transparent 20%, #30234d 70%);
     box-shadow: -10px 20px 30px -10px rgba(0, 0, 0, 0.3);
 }
-.project-r .area-article .row-2
-{
-    background: linear-gradient(-90deg, #30234d 20%, transparent 70%);
-    box-shadow: 10px 20px 30px -10px rgba(0, 0, 0, 0.3);
-}
-.project   .area-article .row-2 .title ,
-.project-r .area-article .row-2 .title
+
+.project .area-article .row-2 .title 
 {
     font-weight: bolder;
     color: #FFF;
 }
-/* .project   .area-article .row-2 .detail ,
-.project-r .area-article .row-2 .detail
+
+
+.project .area-article .row-2 .description h3
 {
-    color: #9e90ff;
-} */
-.project   .area-article .row-2 .description ,
-.project-r .area-article .row-2 .description
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.project   .area-article .row-2 .description 
 {
     /* text-align: left; */
     padding: 10px;
+    flex-direction: column;;
+    align-content: flex-start;
+    align-items: flex-start;
 }
-.project   .area-article .row-2 .footer ,
-.project-r .area-article .row-2 .footer
+
+.project .area-article .row-2 .description ul
+{
+    padding-left: 20px;
+}
+
+.project .area-article .row-2 .footer
 {
     overflow: auto;
     /* border: 1px #ff0000 solid; */
 }
-.project   .footer .links , 
-.project   .footer .tools ,
-.project-r .footer .links , 
-.project-r .footer .tools
+.project .footer .links , 
+.project .footer .tools
 {
     /* width: 100%; */
     min-height: 1px;
@@ -725,8 +707,7 @@ address
 }
 
 
-.project   .area-article .row-2 .footer .links .elem ,
-.project-r .area-article .row-2 .footer .links .elem
+.project .area-article .row-2 .footer .links .elem
 {
     font-size: 20px;
     margin-top: 10px;

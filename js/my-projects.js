@@ -19,15 +19,8 @@ function write_my_projects()
     for (i = 0; i < projects.length; i++)
     {
         var proj = projects[ i ];
-        var k = i % 2;
-        if ( k == 0 )
-        {
-            document.write( "<div class=\"reveal project\">" );
-        }
-        else 
-        {
-            document.write( "<div class=\"reveal project-r\">" );
-        }
+
+        document.write( "<div class=\"reveal project\">" );
         document.write( "    <div class=\"area-image\">" );
         document.write( "        <a class=\"row-1\" target=\"_blank\" href=\""+ proj.url +"\">" );
         document.write( "            <img class=\"image circle\" src=\""+ proj.img +"\" onerror=\"this.src='img/no-image.png'\" />");
@@ -36,13 +29,13 @@ function write_my_projects()
         document.write( "    <article class=\"area-article\">" );
         document.write( "        <div class=\"area-date\">" );
         document.write( "           <time class=\"date\" datetime=\"2011-11\" >" );
-        document.write( "               "+ proj.date.month +"-"+ proj.date.year );
+        document.write( "               "+ proj.date.start.month +"-"+ proj.date.start.year +"<span style=\"width:20px\"></span>:<span style=\"width:20px\"></span>"+ proj.date.end.month +"-"+ proj.date.end.year );
         document.write( "           </time>" );
         document.write( "        </div>" );
         document.write( "        <div class=\"row-2\">" );
         document.write( "            <article class=\"title\"><p>"+ proj.title +"</p></article>" );
         document.write( "            <article class=\"detail\">" );
-        document.write( "                <p class=\"description\">"+ proj.discription +"</p>" );
+        document.write( "                <div class=\"description\">"+ proj.discription +"</div>" );
         document.write( "            </article>" );
         document.write( "            <div class=\"footer\">" );
         document.write( "              <ul class=\"tools\">\n" );
@@ -78,58 +71,108 @@ function AddProjects( _title, _date, _skills, _links, _url, _img, _discription )
 AddProjects
 ( 
     "Solo Indie Game Development: Engine & Programming"
-,   { month: "Jan", year:  "2017" }
-,   [ "C++", "GLSL", "Vulkan API", "Data Structure & Algorithm", "Vector Mathematics" ]
+,   {start:{ month: "Jan", year:  "2024" }, end:{ month: "Present", year:  "" }}
+,   [ "C++", "GLSL", "Vulkan API", "Data Structure & Algorithm", "Vector Mathematics", "vscode", "xcode" ]
 ,   [ { icon: "github", url: "https://github.com/kanthonye/KEGE" } ]
 ,   "https://github.com/kanthonye/KEGE"
 ,   "img/Screenshot-2023-11-04-at-1.36.21-PM.png"
-,   "This project involved the creation of a game engine using C++ and a range of related technologies. To handle input from the system, an application object was created to manage the engine object, which in turn was responsible for managing scene objects. An abstract graphics object was created to handle all graphics commands and to create graphics objects such as vertex-buffers, index-buffers, textures, and graphics-pipelines. One notable aspect of the project was the implementation of a pool-managing system using C++ templates to store data of any kind. The project also involved the creation of a Vulkan graphics object and a vector math library, both of which were used extensively throughout the development process. <br/><br/>Other key components of the project included the creation of a scene object, an Entity Component System (ECS) to manage scene entities, and the development of various graphics-related features such as graphics-pipelines, mesh objects, material objects, and a graphical user interface (GUI). Overall, this project provided a comprehensive and flexible game engine capable of supporting a wide range of game development needs. Skills required for this project: C++, Vulkan API, Data Structure & Algorithm, Vector Mathematics, Memory Management, OPP."
+,   `
+<h3> Project Goal: </h3>
+<ul>
+    <li> Continue developing my prototype functional game engine and leverage the Vulkan API for improved performance and potential future expansion. </li>
+</ul>
+
+<h3> Key Activities: </h3>
+
+<ul>
+    <li> Learn the Vulkan API. </li>
+    <li> Reimplement core graphics components using Vulkan (e.g., vertex-buffer, index-buffer, command-buffer, texture image, shader pipelines etc). </li>
+    <li> Exploring developing a scripting system (scripting language, virtual machine, compiler). </li>
+</ul>
+
+<h3> Outcomes: </h3>
+
+<ul>
+    <li> Gained advanced knowledge of the Vulkan API and its application in game engine development. </li>
+    <li> Enhanced the engine's graphics capabilities by leveraging Vulkan's low-level control and potential performance benefits. </li>
+    <li> Explored scripting system development, gaining valuable experience in language design and virtual machine implementation. </li>
+</ul>
+`
 );
 
 AddProjects
 ( 
     "E-Commerce Shopping Store"
-,   { month: "June", year:  "2023" }
-,   [ "React", "JavaScript", "CSS", "HTML" ]
+,   {start:{ month: "June", year:  "2023" }, end:{ month: "June", year:  "2023" }}
+,   [ "React", "JavaScript", "CSS", "HTML", "VSCode" ]
 ,   [ { icon: "github", url: "https://github.com/kanthonye/e-commerce-web-app/tree/main" } ]
 ,   "https://github.com/kanthonye/e-commerce-web-app/tree/main"
 ,   "img/project-e-comm.png"
 ,   `
-<strong> Project Goal: </strong>
+<h3> Project Goal: </h3>
+<ul>
+    <li> Develop and a user-friendly e-commerce platform specifically catering to the fashion market. </li>
+</ul>
 
-<li> Develop a prototype functional game engine with a focus on core functionalities and utilize it to create a basic, playable game as a solo indie developer. </li>
+<h3> Target Audience: </h3>
 
-<strong> Key Activities: </strong>
+<ul>
+    <li> Fashion-conscious consumers seeking a convenient and stylish online shopping experience.. </li>
+</ul>
 
-<li> Learn core game development concepts (rendering, physics, game loop, audio, animation, and memory management). </li>
-<li> Implement core functionalities within the engine (game loop, rendering, scene management, input handling, collision detection, etc) </li>
-<li> Build an entity-component-system for representing entities in the scene. </li>
-<li> Build a level-of-detail quad-tree terrain to support both flat-terrain and spherical-terrain for planetary rendering. </li>
-<li> Develop an immediate mode graphical-user-interface (GUI) library. </li>
-<li> (Optional) Explored additional features like audio, menus, level design, atmospheric scattering, water rendering, custom scripting system and virtual machine, etc. </li>
+<h3> Key Activities: </h3>
 
-<strong> Outcomes: </strong>
+<ul>
+    <li> Seamless User Experience: Create an intuitive and visually appealing platform for browsing, searching, and purchasing products. This could include high-resolution product images, detailed descriptions, and user-friendly navigation. </li>
+    <li> (Optional) Advanced Features: Consider incorporating features like size recommendations, wishlists, customer reviews, loyalty programs, or influencer partnerships to enhance the shopping experience. </li>
+</ul>
 
-<li> Honed software development skills through the development process. </li>
-<li> Gained valuable experience in solo game development and the software development lifecycle. </li>
+<h3> Outcomes: </h3>
+
+<ul>
+    <li> Gain valuable experience in e-commerce platform selection, feature development, and user experience design. </li>
+</ul>
 `
 );
 
 AddProjects
 ( 
     "Solo Indie Game Development: Engine & Programming"
-,   { month: "Jan", year:  "2017" }
-,   [ "C++", "GLSL", "Vulkan API", "Data Structure & Algorithm", "Vector Mathematics" ]
+,   {start:{ month: "Jan", year:  "2017" }, end:{ month: "June", year:  "2021" }}
+,   [ "C++", "GLSL", "OpenGL 4.1 API with GLFW Library", "Data Structure & Algorithm", "Vector Mathematics", "xcode" ]
 ,   [ { icon: "github", url: "https://github.com/kanthonye/KEGE" } ]
 ,   "https://github.com/kanthonye/KEGE"
 ,   "img/Screenshot-2023-11-04-at-1.36.21-PM.png"
-,   "This project involved the creation of a game engine using C++ and a range of related technologies. To handle input from the system, an application object was created to manage the engine object, which in turn was responsible for managing scene objects. An abstract graphics object was created to handle all graphics commands and to create graphics objects such as vertex-buffers, index-buffers, textures, and graphics-pipelines. One notable aspect of the project was the implementation of a pool-managing system using C++ templates to store data of any kind. The project also involved the creation of a Vulkan graphics object and a vector math library, both of which were used extensively throughout the development process. <br/><br/>Other key components of the project included the creation of a scene object, an Entity Component System (ECS) to manage scene entities, and the development of various graphics-related features such as graphics-pipelines, mesh objects, material objects, and a graphical user interface (GUI). Overall, this project provided a comprehensive and flexible game engine capable of supporting a wide range of game development needs. Skills required for this project: C++, Vulkan API, Data Structure & Algorithm, Vector Mathematics, Memory Management, OPP."
+,   `
+<h3> Project Goal: </h3>
+<ul>
+    <li> Develop a prototype functional game engine with a focus on core functionalities and utilize it to create a basic, playable game as a solo indie developer. </li>
+</ul>
+
+<h3> Key Activities: </h3>
+
+<ul>
+    <li> Learn core game development concepts (rendering, physics, game loop, audio, animation, and memory management). </li>
+    <li> Implement core functionalities within the engine (game loop, rendering, scene management, input handling, collision detection, etc) </li>
+    <li> Build an entity-component-system for representing entities in the scene. </li>
+    <li> Build a level-of-detail quad-tree terrain to support both flat-terrain and spherical-terrain for planetary rendering. </li>
+    <li> Develop an immediate mode graphical-user-interface (GUI) library. </li>
+    <li> (Optional) Explored additional features like audio, menus, level design, atmospheric scattering, water rendering, custom scripting system and virtual machine, etc. </li>
+</ul>
+
+<h3> Outcomes: </h3>
+
+<ul>
+<li> Honed software development skills through the development process. </li>
+<li> Gained valuable experience in solo game development and the software development lifecycle. </li>
+</ul>
+`
 );
 
 AddProjects
 ( 
     "My Web Portfolio"
-,   { month: "Oct", year:  "2019" }
+,   {start:{ month: "Oct", year:  "2019" },end:{ month: "Oct", year:  "2019" }}
 ,   [ "Javascript", "HTML", "CSS" ]
 ,   [ { icon: "github", url: "https://github.com/kanthonye/web-protfolio-2.0" } ]
 ,   "https://github.com/kanthonye/web-protfolio-2.0"
@@ -140,7 +183,7 @@ AddProjects
 AddProjects
 ( 
     "Programming Language Interpreter"
-,   { month: "May", year:  "2019" }
+,   {start:{ month: "Mar", year:  "2019" }, end:{ month: "May", year:  "2019" }}
 ,   [ "C++", "Data Structure & Algorithm", "OOP" ]
 ,   [ { icon: "github", url: "https://github.com/kanthonye/school-projects/tree/master/qc/CS316/Interpreter" } ]
 ,   "https://github.com/kanthonye/school-projects/tree/master/qc/CS316/Interpreter"
@@ -151,7 +194,7 @@ AddProjects
 AddProjects
 ( 
     "interactive 3D scene (Christmas Theme)"
-,   { month: "Dec", year:  "2018" }
+,   {start:{ month: "Dec", year:  "2018" }, end:{ month: "Dec", year:  "2018" }}
 ,   [ "C++" , "OpenGL API", "Data Structure & Algorithm", "Vector Mathematics" ]
 ,   [ { icon: "github", url: "https://github.com/kanthonye/school-projects/blob/master/qc/CS368/Basic3DInteractEnvironment.cpp" } ]
 ,   "https://github.com/kanthonye/school-projects/blob/master/qc/CS368/Basic3DInteractEnvironment.cpp"
@@ -163,23 +206,34 @@ AddProjects
 
 AddProjects
 ( 
-    "Realtime Continuous LOD Quadtrees Terrain Rendering"
-,   { month: "Sep", year:  "2016" }
-,   [ "C++", "GLSL", "OpenGL API", "Data Structure & Algorithm", "Vector Mathematics" ]
-,   [ ]
-,   "proj-url"
-,   "img/landscape-0.png"
-,   "I undertook a complex project focused on creating Realtime Continuous LOD Quadtrees Terrain Rendering. The project involved the use of various technical skills, including C++, GLSL, OpenGL API, Data Structures & Algorithms, Vector Mathematics, and OOP. The primary objective was to take a square grid mesh, along with a height map, and use the image data to displace the vertex position height component. I then implemented a quadtree-based LOD algorithm to subdivide the grid mesh into smaller squares based on the viewer's position. This was achieved by including and excluding vertex indices from the grid mesh, creating a dynamic and highly interactive terrain rendering system. Overall, this project showcased my expertise in various programming languages, data structures, and algorithms, as well as my ability to work on complex projects in the field of computer graphics and game development.." 
-);
+    "3D Graphics Programming Projects"
+,   {start:{ month: "Oct", year:  "2014" }, end:{ month: "June", year:  "2016" }}
+,   [ "C++", "GLSL", "Vulkan API", "Data Structure & Algorithm", "Vector Mathematics" ]
+,   [ { icon: "github", url: "https://github.com/kanthonye/KEGE" } ]
+,   "https://github.com/kanthonye/KEGE"
+,   "img/Screenshot-2023-11-04-at-1.36.21-PM.png"
+,   `
+<h3> Project Goal: </h3>
 
+<ul> 
+    <li> Learn 3D graphics programming fundamentals using the modern OpenGL API (e.g., OpenGL 4.5 with GLFW library). </li>
+</ul>
 
-AddProjects
-( 
-    "Vector Math Library"
-,   { month: "Oct", year:  "2014" }
-,   [ "C++", "Linear Alegbra", "Vector Calculus" ]
-,   [ ]
-,   "proj-url"
-,   "img/coding-clipart.jpg"
-,   "I designed and built a Vector Math Library that has been instrumental in my work. The library was developed using C++, Linear Algebra, and Vector Calculus, and is designed to simplify and optimize complex mathematical calculations involving vectors. The library provides a range of functions, including vector addition, subtraction, dot product, cross product, and normalization, among others. The library has been designed to be efficient and easy to use, with a clear and intuitive API that simplifies the process of working with vectors. Overall, this project showcases my expertise in C++ programming, as well as my ability to design and develop complex software systems for use in 3D projects.." 
+<h3> Key Activities: </h3>
+
+<ul>
+    <li> Learn the modern OpenGL API (e.g., OpenGL 4.5 with GLFW library). </li>
+    <li> Learn GLSL (OpenGL shader programming language). </li>
+    <li> Build a basic graphics vector math library (e.g., for vector operations and matrix transformations) </li>
+    <li> Build an .obj file loader and a .dae file loader for loading 3D models into the program. </li>
+    <li> Create interactive demos showcasing functionalities like rotating objects, applying textures, lighting effects, particle system editor, terrain rendering with height maps, and 3d object animation. </li>
+</ul>
+
+<h3> Outcomes: </h3>
+
+<ul>
+    <li> Honed my C/C++ software development skills. </li>
+    <li> Gained valuable insights in linear algebra and vector calculus. </li>
+<ul>
+`
 );

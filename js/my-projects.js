@@ -1,7 +1,7 @@
 
 function main()
 {
-    fetch( "https://github.com/kanthonye/web-protfolio-2.0/blob/master/js/projects.json" )
+    fetch( "https://github.com/kanthonye/web-protfolio-2.0/blob/master/js/projects.json" ) 
     .then( (response) => response.json() )
     .then((json) => {
         alert( json );

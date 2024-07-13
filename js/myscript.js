@@ -73,3 +73,6 @@ function resize_function()
         laptop_mode();
     }
 }
+
+
+

@@ -1,168 +1,239 @@
 [
-  {
-    "title": "Solo Indie Game Development: Engine & Programming",
-    "link": "https://github.com/kanthonye/KEGE",
-    "image": "img/Screenshot-2023-11-04-at-1.36.21-PM.png",
-    "skills": [
-      "C++",
-      "GLSL",
-      "Vulkan API",
-      "Data Structure & Algorithm",
-      "Vector Mathematics",
-      "vscode",
-      "xcode"
-    ],
-    "dates": {
-      "start": {
-        "month": "Present",
-        "year": ""
-      },
-      "end": {
-        "month": "Jan",
-        "year": "2024"
-      }
-    },
-    "description": {
-      "goal": [
-        "Continue developing my prototype functional game engine and leverage the Vulkan API for improved performance and potential future expansion."
-      ],
-      "activity": [
-        "Learn the Vulkan API.",
-        "Reimplement core graphics components using Vulkan (e.g., vertex-buffer, index-buffer, command-buffer, texture image, shader pipelines etc).",
-        "Exploring developing a scripting system (scripting language, virtual machine, compiler)."
-      ],
-      "outcome": [
-        "Gained advanced knowledge of the Vulkan API and its application in game engine development.",
-        "Enhanced the engine's graphics capabilities by leveraging Vulkan's low-level control and potential performance benefits.",
-        "Explored scripting system development, gaining valuable experience in language design and virtual machine implementation."
-      ]
-    }
-  },
+    {
+        "title": "React Native E-Commerce Mobile App (The Grove)",
+        "link": { "icon": "github", "url": "https://github.com/kanthonye/react-native-ecommerce-app-The-Grove" },
+        "image": "img/the-grove.png",
+        
+        "skills": 
+        [
+            "React Native",
+            "Javascript",
+            "vscode"
+        ],
 
-  {
-    "title": "E-Commerce Shopping Store",
-    "link": "",
-    "image": "",
-    "skills": ["React", "JavaScript", "CSS", "HTML", "VSCode"],
-    "dates": {
-      "start": { "month": "June", "year": "2023" },
-      "end": { "month": "June", "year": "2023" }
-    },
-    "description": {
-      "goal": [
-        "Develop and a user-friendly e-commerce platform specifically catering to the fashion market."
-      ],
-      "activity": [
-        "Seamless User Experience: Create an intuitive and visually appealing platform for browsing, searching, and purchasing products. This could include high-resolution product images, detailed descriptions, and user-friendly navigation.",
-        "(Optional) Advanced Features: Consider incorporating features like size recommendations, wishlists, customer reviews, loyalty programs, or influencer partnerships to enhance the shopping experience."
-      ],
-      "outcome": [
-        "Gain valuable experience in e-commerce platform selection, feature development, and user experience design."
-      ]
-    }
-  },
+        "dates": 
+        {
+            "start": 
+            {
+                "month": "July",
+                "year": "2024"
+            },
+            "end": 
+            {
+                "month": "July",
+                "year": "2024"
+            }
+        },
 
-  {
-    "title": "Solo Indie Game Development: Engine & Programming",
-    "link": "https://github.com/kanthonye/KEGE",
-    "image": "img/Screenshot-2023-11-04-at-1.36.21-PM.png",
-    "skills": [
-      "C++",
-      "GLSL",
-      "OpenGL 4.1 API with GLFW Library",
-      "Data Structure & Algorithm",
-      "Vector Mathematics",
-      "xcode"
-    ],
-    "dates": {
-      "start": {
-        "month": "Jan",
-        "year": "2017"
-      },
-      "end": {
-        "month": "June",
-        "year": "2021"
-      }
+        "description": 
+        {
+            "goal": 
+            [
+                "The goal of The Grove, an e-commerce mobile app created with React Native, is to provide plant enthusiasts with a seamless and enjoyable shopping experience by offering a diverse selection of plants and stylish pots to enhance their living spaces."
+            ],
+            "activity": 
+            [
+                "Design & Development: Designed and developed the app using React Native, ensuring a smooth and intuitive user interface.",
+                "Feature Implementation: Integrated key features such as product browsing, detailed product pages, cart management, and a checkout process.",
+                "Performance Optimization: Ensured the app runs efficiently on both iOS and Android devices by optimizing performance and responsiveness.",
+                "User Testing: Conducted user testing sessions to gather feedback and iterated on the design and features based on user input."
+            ],
+            "outcome": 
+            [
+                "Receiving high positive feedback from users for its user-friendly interface, seamless shopping experience and efficient performance."
+            ]
+        }
     },
-    "description": {
-      "goal": [
-        "Develop a prototype functional game engine with a focus on core functionalities and utilize it to create a basic, playable game as a solo indie developer."
-      ],
-      "activity": [
-        "Learn core game development concepts (rendering, physics, game loop, audio, animation, and memory management).",
-        "Implement core functionalities within the engine (game loop, rendering, scene management, input handling, collision detection, etc)",
-        "Build an entity-component-system for representing entities in the scene.",
-        "Build a level-of-detail quad-tree terrain to support both flat-terrain and spherical-terrain for planetary rendering.",
-        "Develop an immediate mode graphical-user-interface (GUI) library.",
-        "(Optional) Explored additional features like audio, menus, level design, atmospheric scattering, water rendering, custom scripting system and virtual machine, etc."
-      ],
-      "outcome": [
-        "Honed software development skills through the development process.",
-        "Gained valuable experience in solo game development and the software development lifecycle."
-      ]
-    }
-  },
 
-  {
-    "title": "My Web Portfolio",
-    "link": "https://github.com/kanthonye/web-protfolio-2.0",
-    "image": "img/site-img.png",
-    "skills": ["Javascript", "HTML", "CSS"],
-    "dates": {
-      "start": {
-        "month": "Oct",
-        "year": "2019"
-      },
-      "end": {
-        "month": "Oct",
-        "year": "2019"
-      }
+    {
+        "title": "Solo Indie Game Development: Engine & Programming",
+        "link": { "icon": "github", "url": "" },
+        "image": "img/Screenshot-2023-11-04-at-1.36.21-PM.png",
+        "skills": [
+            "C++",
+            "GLSL",
+            "Vulkan API",
+            "Data Structure & Algorithm",
+            "Vector Mathematics",
+            "vscode",
+            "xcode"
+        ],
+        "dates": {
+        "start": {
+            "month": "Present",
+            "year": ""
+        },
+        "end": {
+            "month": "Jan",
+            "year": "2024"
+        }
+        },
+        "description": {
+        "goal": [
+            "Continue developing my prototype functional game engine and leverage the Vulkan API for improved performance and potential future expansion."
+        ],
+        "activity": [
+            "Learn the Vulkan API.",
+            "Reimplement core graphics components using Vulkan (e.g., vertex-buffer, index-buffer, command-buffer, texture image, shader pipelines etc).",
+            "Exploring developing a scripting system (scripting language, virtual machine, compiler)."
+        ],
+        "outcome": [
+            "Gained advanced knowledge of the Vulkan API and its application in game engine development.",
+            "Enhanced the engine's graphics capabilities by leveraging Vulkan's low-level control and potential performance benefits.",
+            "Explored scripting system development, gaining valuable experience in language design and virtual machine implementation."
+        ]
+        }
     },
-    "description": {
-      "goal": [
-        "Build a clean and responsive user friendly website to showcase my personal brand and professional accomplishments."
-      ],
-      "activity": [
-        "Leveraging my expertise in front-end web development, I incorporated responsive design techniques and optimized the site for performance and usability across a variety of devices.",
-        "utilized JavaScript to add interactive elements and animations, creating a dynamic and engaging user experience."
-      ],
-      "outcome": [
-        "Honed software development skills through the development process.",
-        "Gained valuable experience in solo game development and the software development lifecycle."
-      ]
-    }
-  },
 
-  {
-    "title": "3D Graphics Programming Projects",
-    "link": "https://github.com/kanthonye/KEGE",
-    "image": "img/Screenshot-2023-11-04-at-1.36.21-PM.png",
-    "skills": [
-      "C++",
-      "GLSL",
-      "Vulkan API",
-      "Data Structure & Algorithm",
-      "Vector Mathematics"
-    ],
-    "dates": {
-      "start": { "month": "Oct", "year": "2014" },
-      "end": { "month": "June", "year": "2016" }
+    {
+        "title": "E-Commerce Online Shopping Clothing Store",
+        "link": { "icon": "github", "url": "https://github.com/kanthonye/e-commerce-web-app/tree/main" },
+        "image": "img/project-e-comm.png",
+        "skills": ["React", "JavaScript", "CSS", "HTML", "VSCode"],
+        "dates": {
+        "start": { "month": "June", "year": "2023" },
+        "end": { "month": "June", "year": "2023" }
+        },
+        "description": {
+            "goal": [
+                "Develop and a user-friendly e-commerce platform specifically catering to the fashion market."
+            ],
+            "activity": [
+                "Seamless User Experience: Create an intuitive and visually appealing platform for browsing, searching, and purchasing products. This could include high-resolution product images, detailed descriptions, and user-friendly navigation.",
+                "(Optional) Advanced Features: Consider incorporating features like size recommendations, wishlists, customer reviews, loyalty programs, or influencer partnerships to enhance the shopping experience."
+            ],
+            "outcome": [
+                "Gain valuable experience in e-commerce platform selection, feature development, and user experience design."
+            ]
+        }
     },
-    "description": {
-      "goal": [
-        "Learn 3D graphics programming fundamentals using the modern OpenGL API (e.g., OpenGL 4.5 with GLFW library)."
-      ],
-      "activity": [
-        "Learn the modern OpenGL API (e.g., OpenGL 4.5 with GLFW library).",
-        "Learn GLSL (OpenGL shader programming language).",
-        "Build a basic graphics vector math library (e.g., for vector operations and matrix transformations).",
-        "Build an .obj file loader and a .dae file loader for loading 3D models into the program.",
-        "Create interactive demos showcasing functionalities like rotating objects, applying textures, lighting effects, particle system editor, terrain rendering with height maps, and 3d object animation."
-      ],
-      "outcome": [
-        "Honed my C/C++ software development skills.",
-        "Gained valuable insights in linear algebra and vector calculus."
-      ]
+
+    {
+        "title": "Solo Indie Game Development: Engine & Programming",
+        "link": { "icon": "github", "url": "" },
+        "image": "img/Screenshot-2023-11-04-at-1.36.21-PM.png",
+        "skills": [
+            "C++",
+            "GLSL",
+            "OpenGL 4.1 API with GLFW Library",
+            "Data Structure & Algorithm",
+            "Vector Mathematics",
+            "xcode"
+        ],
+        "dates": {
+        "start": {
+            "month": "Jan",
+            "year": "2017"
+        },
+        "end": {
+            "month": "June",
+            "year": "2021"
+        }
+        },
+        "description": {
+        "goal": [
+            "Develop a prototype functional game engine with a focus on core functionalities and utilize it to create a basic, playable game as a solo indie developer."
+        ],
+        "activity": [
+            "Learn core game development concepts (rendering, physics, game loop, audio, animation, and memory management).",
+            "Implement core functionalities within the engine (game loop, rendering, scene management, input handling, collision detection, etc)",
+            "Build an entity-component-system for representing entities in the scene.",
+            "Build a level-of-detail quad-tree terrain to support both flat-terrain and spherical-terrain for planetary rendering.",
+            "Develop an immediate mode graphical-user-interface (GUI) library.",
+            "(Optional) Explored additional features like audio, menus, level design, atmospheric scattering, water rendering, custom scripting system and virtual machine, etc."
+        ],
+        "outcome": [
+            "Honed software development skills through the development process.",
+            "Gained valuable experience in solo game development and the software development lifecycle."
+        ]
+        }
+    },
+
+    {
+        "title": "My Web Portfolio",
+        "link": { "icon": "github", "url": "https://kennethesdaile.com", "demo": "https://kennethesdaile.com" },
+        "image": "img/site-img.png",
+        "skills": ["Javascript", "HTML", "CSS"],
+        "dates": {
+        "start": {
+            "month": "Oct",
+            "year": "2019"
+        },
+        "end": {
+            "month": "Oct",
+            "year": "2019"
+        }
+        },
+        "description": {
+        "goal": [
+            "Build a clean and responsive user friendly website to showcase my personal brand and professional accomplishments."
+        ],
+        "activity": [
+            "Leveraging my expertise in front-end web development, I incorporated responsive design techniques and optimized the site for performance and usability across a variety of devices.",
+            "utilized JavaScript to add interactive elements and animations, creating a dynamic and engaging user experience."
+        ],
+        "outcome": [
+            "Honed software development skills through the development process.",
+            "Gained valuable experience in solo game development and the software development lifecycle."
+        ]
+        }
+    },
+
+    {
+        "title": "interactive 3D scene (Course Project)",
+        "link": { "icon": "github", "url": "https://github.com/kanthonye/school-projects/blob/master/qc/CS368/Basic3DInteractEnvironment.cpp" } ,
+        "image": "img/simple-scene.gif",
+        "skills": [ "C++" , "OpenGL API", "Data Structure & Algorithm", "Vector Mathematics" ],
+        "dates": {"start":{ "month": "Dec", "year":  "2018" }, "end":{ "month": "Dec", "year":  "2018" }},
+        "description": 
+        {
+            "goal": 
+            [
+                "Create a simple 3D project using using prior experience in 3D graphics programming and knowledge gain from the course."
+            ],
+            "activity": 
+            [
+                "Create an interactive 3D scene with a Christmas theme. Using the OpenGL Graphics API version 2.1 and programming language C++.",
+                "Created a fully-realized 3D scene featuring a snowman, table, chairs, rotating ceiling fan, and a free-moving 3D camera that allowed users to explore the scene from any angle.",
+                "Notably, all objects in the scene were manually created, demonstrating my strong aptitude for hands-on design and development"
+            ],
+            "outcome": 
+            [
+                "Got an A+ grade for the project."
+            ]
+        }
+    },
+
+    {
+        "title": "3D Graphics Programming Projects",
+        "link": { "icon": "github", "url": "" },
+        "image": "img/Screenshot-2023-11-04-at-1.36.21-PM.png",
+        "skills": [
+            "C++",
+            "GLSL",
+            "Vulkan API",
+            "Data Structure & Algorithm",
+            "Vector Mathematics"
+        ],
+        "dates": {
+            "start": { "month": "Oct", "year": "2014" },
+            "end": { "month": "June", "year": "2016" }
+        },
+        "description": {
+            "goal": [
+                "Learn 3D graphics programming fundamentals using the modern OpenGL API (e.g., OpenGL 4.5 with GLFW library)."
+            ],
+            "activity": [
+                "Learn the modern OpenGL API (e.g., OpenGL 4.5 with GLFW library).",
+                "Learn GLSL (OpenGL shader programming language).",
+                "Build a basic graphics vector math library (e.g., for vector operations and matrix transformations).",
+                "Build an .obj file loader and a .dae file loader for loading 3D models into the program.",
+                "Create interactive demos showcasing functionalities like rotating objects, applying textures, lighting effects, particle system editor, terrain rendering with height maps, and 3d object animation."
+            ],
+            "outcome": [
+                "Honed my C/C++ software development skills.",
+                "Gained valuable insights in linear algebra and vector calculus."
+            ]
+        }
     }
-  }
 ]

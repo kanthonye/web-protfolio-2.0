@@ -17,7 +17,7 @@
     <script src="js/employments.js"></script>
     <script src="js/myscript.js"></script>
     <script src="js/my-projects.js"></script>
-    <script src="js/navbar.js"></script>
+    <!-- <script src="js/navbar.js"></script> -->
 </head>
 
 
@@ -317,12 +317,11 @@
 <section  class="reveal">
     <div class="content">
         <div class="featured-projects" name="repos"> 
-            <h1 class="heading" id="my-projects" >
+            <h1 class="heading">
                 Featured Project
             </h1>
-            <script>
-                write_my_projects();
-            </script>
+            <div id="my-projects"></div>
+            <script> renderProjects(); </script>
         </div> 
     </div>
 </section>

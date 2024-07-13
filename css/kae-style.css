@@ -712,6 +712,8 @@ address
     font-size: 20px;
     margin-top: 10px;
     /* border: 1px #fff solid; */
+    display: flex !important;
+    gap: 5px;
 }
 
 .fa
@@ -722,6 +724,7 @@ address
   text-decoration: none;
   float: right;
 } 
+
 
 
 
@@ -776,4 +779,11 @@ address
     {
         text-align: center;
     }
+}
+
+
+
+
+.tiny_text{
+    font-size: 16px !important;
 }

@@ -35,6 +35,7 @@ const renderProject = ( project ) => {
                         </ul>
                     </div>
                 </article>
+                <h4> Technologies: </h4>
                 <div class="footer">
                     <ul class="tools">
                         ${project.skills.map( skill => `<li>${skill}</li>` ).join('')}

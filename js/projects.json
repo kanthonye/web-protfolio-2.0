@@ -47,7 +47,7 @@
 
     {
         "title": "Solo Indie Game Development: Engine & Programming",
-        "link": { "icon": "github", "url": "" },
+        "link": { "icon": "github", "url": "https://github.com/kanthonye/kege-engine" },
         "image": "img/Screenshot-2023-11-04-at-1.36.21-PM.png",
         "skills": [
             "C++",
@@ -110,7 +110,7 @@
 
     {
         "title": "Solo Indie Game Development: Engine & Programming",
-        "link": { "icon": "github", "url": "" },
+        "link": { "icon": "github", "url": "https://github.com/kanthonye/kege-engine" },
         "image": "img/Screenshot-2023-11-04-at-1.36.21-PM.png",
         "skills": [
             "C++",
@@ -151,7 +151,7 @@
 
     {
         "title": "My Web Portfolio",
-        "link": { "icon": "github", "url": "https://kennethesdaile.com", "demo": "https://kennethesdaile.com" },
+        "link": { "icon": "github", "url": "https://github.com/kanthonye/web-protfolio-2.0", "demo": "https://kennethesdaile.com" },
         "image": "img/site-img.png",
         "skills": ["Javascript", "HTML", "CSS"],
         "dates": {
@@ -206,7 +206,7 @@
 
     {
         "title": "3D Graphics Programming Projects",
-        "link": { "icon": "github", "url": "" },
+        "link": { "icon": "github", "url": "https://github.com/kanthonye/school-projects/blob/master/qc/CS368/Basic3DInteractEnvironment.cpp" },
         "image": "img/Screenshot-2023-11-04-at-1.36.21-PM.png",
         "skills": [
             "C++",
